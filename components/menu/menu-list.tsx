@@ -5,8 +5,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { menuItems } from "@/lib/data";
+import {useTranslations} from 'next-intl';
 
 export default function MenuList() {
+  const t =  useTranslations("Menu");
   const [searchTerm, setSearchTerm] = useState("");
   const categories = Array.from(new Set(menuItems.map(item => item.category)));
   
@@ -36,6 +38,7 @@ export default function MenuList() {
   };
 
   return (
+    
     <section className="section bg-white">
       <div className="container-custom">
         {/* Search Bar */}
@@ -43,7 +46,7 @@ export default function MenuList() {
           <div className="relative">
             <input
               type="text"
-              placeholder="Search menu items, ingredients..."
+              placeholder={t("search")}
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full py-3 px-12 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-restaurant-primary"
@@ -59,12 +62,12 @@ export default function MenuList() {
             
             {filteredItems.length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-lg text-gray-500">No items found matching "{searchTerm}"</p>
+                <p className="text-lg text-gray-500">{t("noResults")} "{searchTerm}"</p>
                 <button 
                   onClick={() => setSearchTerm("")}
                   className="mt-4 text-restaurant-primary font-medium hover:underline"
                 >
-                  Clear search
+                  clearReaserch
                 </button>
               </div>
             ) : (

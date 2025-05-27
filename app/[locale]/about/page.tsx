@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { staff } from "@/lib/data";
+import { useTranslations } from "next-intl";
 
 export const metadata = {
   title: 'About Us | GoLab Restaurant',
@@ -9,6 +10,7 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  const t = useTranslations("About")
   return (
     <main>
       <Header />
@@ -27,9 +29,9 @@ export default function AboutPage() {
         </div>
         
         <div className="container-custom relative z-20 text-center">
-          <h1 className="text-white mb-4">About Us</h1>
+          <h1 className="text-white mb-4">{t("title")}</h1>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
-            Our journey, our passion, and our commitment to culinary excellence
+          {t("subtitle")}
           </p>
         </div>
       </section>
@@ -40,26 +42,26 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-restaurant-primary font-medium mb-2 inline-block">
-                Our Story
+              {t("story.title")}
               </span>
-              <h2 className="mb-6">A Tradition of Excellence Since 2022</h2>
+              <h2 className="mb-6">{t("story.subtitle")}</h2>
               <p className="mb-4">
-              The Story Of Golab Restaurant begins with the fusion of two culinary cultures, Iran and Turkey.
+              {t("story.content.p1")}
               </p>
               <p className="mb-4">
-              Golab is more than just a restaurant, it is a memorable experience.
+              {t("story.content.p2")}
               </p>
               <p className="mb-4">
-              In the Bakırköy district of Istanbul, on the seashore, there is a restaurant with a unique view. This restaurant is called Golab. Golab is a restaurant with a rich menu inspired by Turkish, Iranian, and modern international cuisines. The founders of this restaurant decided to open Golab to promote the richness of Iranian and Turkish culinary culture and to offer an unforgettable experience to their guests.
+              {t("story.content.p3")}
               </p>
               <p className="mb-4">
-              Golab’s menu includes flavors from international cuisines as well as traditional Turkish and Iranian dishes. Golab’s renowned and professional chef uses the highest quality ingredients and modern magical techniques when preparing his dishes.
+              {t("story.content.p4")}
               </p>
               <p className="mb-4">
-              Golab is popular with both local and foreign guests. The restaurant’s atmosphere is warm and inviting. The restaurant staff is friendly and professional.
+              {t("story.content.p5")}
               </p>
               <p>
-              Golab is one of the most popular Iranian restaurants in Istanbul with its full menu that appeals to all tastes.
+              {t("story.content.p6")}
               </p>
             </div>
             <div className="relative fancy-border p-4">
@@ -81,12 +83,11 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <span className="text-restaurant-primary font-medium mb-2 inline-block">
-              Our Philosophy
+            {t("values.title")}
             </span>
-            <h2 className="mb-4">Guided by Our Values</h2>
+            <h2 className="mb-4">{t("values.subtitle")}</h2>
             <p className="max-w-2xl mx-auto">
-              At GoLab Restaurant, our approach to dining is shaped by core principles that 
-              influence everything from our menu to our service.
+            {t("values.description")}
             </p>
           </div>
           
@@ -108,10 +109,9 @@ export default function AboutPage() {
                   <path d="M12 13.5V8"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">Quality Ingredients</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">{t("values.quality.title")}</h3>
               <p className="text-center">
-                We source the finest local and imported ingredients, working directly with 
-                farmers and suppliers who share our commitment to quality and sustainability.
+                {t("values.quality.description")}
               </p>
             </div>
             
@@ -134,10 +134,9 @@ export default function AboutPage() {
                   <path d="m7 20.66 1-1.73"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">Culinary Artistry</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">{t("values.artistry.title")}</h3>
               <p className="text-center">
-                Our team of talented chefs combines traditional techniques with innovative 
-                approaches to create dishes that are as visually stunning as they are delicious.
+              {t("values.artistry.description")}
               </p>
             </div>
             
@@ -148,10 +147,9 @@ export default function AboutPage() {
                   <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">Exceptional Service</h3>
+              <h3 className="text-xl font-semibold mb-4 text-center">{t("values.service.title")}</h3>
               <p className="text-center">
-                We believe dining is about more than just food—it's an experience. Our attentive 
-                staff ensures every guest feels welcomed, valued, and completely satisfied.
+              {t("values.service.description")}
               </p>
             </div>
           </div>

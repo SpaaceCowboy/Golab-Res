@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin, Clock, Instagram, Facebook, Twitter } from "lucide-react";
 import { location } from "@/lib/data";
+import {useTranslations} from 'next-intl';
 
 export default function Footer() {
+  const t =  useTranslations("Footer");
   return (
     <footer className="bg-restaurant-secondary text-white pt-16 pb-8">
       <div className="container-custom">
@@ -18,7 +20,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-300 mb-6">
-              Experience the finest dining with authentic flavors, warm ambiance, and exceptional service.
+              {t('description')}
             </p>
             <div className="flex space-x-4">
               <Link 
@@ -50,36 +52,36 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-white">Quick Links</h3>
+            <h3 className="text-xl font-semibold mb-6 text-white">{t("quickLinks")}</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-gray-300 hover:text-restaurant-primary transition-colors duration-300">
-                  Home
+                  {t("Navigation.home")}
                 </Link>
               </li>
               <li>
                 <Link href="/menu" className="text-gray-300 hover:text-restaurant-primary transition-colors duration-300">
-                  Our Menu
+                  {t("Navigation.menu")}
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-restaurant-primary transition-colors duration-300">
-                  About Us
+                   {t("Navigation.about")}
                 </Link>
               </li>
               <li>
                 <Link href="/gallery" className="text-gray-300 hover:text-restaurant-primary transition-colors duration-300">
-                  Gallery
+                  {t("Navigation.gallery")}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-gray-300 hover:text-restaurant-primary transition-colors duration-300">
-                  Contact
+                  {t("Navigation.contact")}
                 </Link>
               </li>
               <li>
                 <Link href="/order" className="text-gray-300 hover:text-restaurant-primary transition-colors duration-300">
-                  Order Online
+                  {t("Navigation.orderOnline")}
                 </Link>
               </li>
             </ul>
@@ -87,7 +89,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-white">Contact Us</h3>
+            <h3 className="text-xl font-semibold mb-6 text-white">{t("contactUs")}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin size={18} className="mr-3 text-restaurant-primary mt-1 flex-shrink-0" />
@@ -112,7 +114,7 @@ export default function Footer() {
 
           {/* Opening Hours */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 text-white">Opening Hours</h3>
+            <h3 className="text-xl font-semibold mb-6 text-white">{t("openingHours")}</h3>
             <ul className="space-y-3">
               
                 <li  className="flex items-start">
@@ -120,7 +122,7 @@ export default function Footer() {
                   <div>
                     <span className="text-white font-medium"></span>
                     <div className="text-gray-300">
-                    Every Day
+                    {t("everyday")}
                     10:00AM - 00:30PM
                     </div>
                   </div>

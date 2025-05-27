@@ -6,8 +6,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { categories, menuItems } from "@/lib/data";
+import {useTranslations} from 'next-intl';
 
 export default function FeaturedMenu() {
+  const t =  useTranslations("HomePage");
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const featuredItems = menuItems.filter(item => item.featured);
   
@@ -35,12 +37,11 @@ export default function FeaturedMenu() {
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="text-restaurant-primary font-medium mb-2 inline-block">
-            Exquisite Flavors
+            {t('featuredMenu.title')}
           </span>
-          <h2 className="mb-4">Featured Menu</h2>
+          <h2 className="mb-4">{t('featuredMenu.subtitle')}</h2>
           <p className="max-w-2xl mx-auto">
-            Explore our chef's selection of Iranian`` dishes, crafted with the finest 
-            ingredients and culinary expertise for an unforgettable dining experience.
+          {t('featuredMenu.description')}
           </p>
         </div>
         
@@ -124,7 +125,7 @@ export default function FeaturedMenu() {
         
         <div className="text-center mt-12">
           <Link href="/menu" className="btn-primary inline-flex items-center">
-            <span>View Full Menu</span>
+            <span>{t('featuredMenu.viewFullMenu')}</span>
             <ArrowRight size={16} className="ml-2" />
           </Link>
         </div>

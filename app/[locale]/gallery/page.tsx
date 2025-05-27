@@ -7,8 +7,10 @@ import { X } from "lucide-react";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { gallery } from "@/lib/data";
+import { useTranslations } from "next-intl";
 
 export default function GalleryPage() {
+  const t = useTranslations("Gallery")
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   
@@ -50,7 +52,7 @@ export default function GalleryPage() {
         </div>
         
         <div className="container-custom relative z-20 text-center">
-          <h1 className="text-white mb-4">Our Gallery</h1>
+          <h1 className="text-white mb-4">{t("")}</h1>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
             Take a visual journey through our restaurant, cuisine, and memorable moments
           </p>

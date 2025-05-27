@@ -4,6 +4,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import MenuList from "@/components/menu/menu-list";
 import { categories } from "@/lib/data";
+import {useTranslations} from 'next-intl';
 
 export const metadata = {
   title: 'Menu | GoLab Restaurant',
@@ -11,6 +12,7 @@ export const metadata = {
 };
 
 export default function MenuPage() {
+  const t =  useTranslations("Menu");
   return (
     <main>
       <Header />
@@ -29,10 +31,9 @@ export default function MenuPage() {
         </div>
         
         <div className="container-custom relative z-20 text-center">
-          <h1 className="text-white mb-4">Our Menu</h1>
+          <h1 className="text-white mb-4">{t("title")}</h1>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
-            Discover our chef-crafted selections featuring the finest seasonal ingredients 
-            and authentic flavors for an unforgettable dining experience.
+              {t("subtitle")}
           </p>
         </div>
       </section>
@@ -42,9 +43,9 @@ export default function MenuPage() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <span className="text-restaurant-primary font-medium mb-2 inline-block">
-              Culinary Selections
+            {t("selection")}
             </span>
-            <h2>Explore Our Categories</h2>
+            <h2>{t("categories")}</h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

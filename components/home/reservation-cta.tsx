@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Clock, Users } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {useTranslations} from 'next-intl';
 
 const timeSlots = [
   "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", 
@@ -15,6 +16,7 @@ const timeSlots = [
 const guestOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 export default function ReservationCTA() {
+  const t =  useTranslations("HomePage");
   const [date, setDate] = useState<string>("");
   const [time, setTime] = useState<string>("");
   const [guests, setGuests] = useState<number>(2);
@@ -55,32 +57,30 @@ export default function ReservationCTA() {
             transition={{ duration: 0.6 }}
           >
             <span className="text-restaurant-primary font-medium mb-2 inline-block">
-              Reserve Your Table
+              {t('reservation.title')}
             </span>
-            <h2 className="mb-6">A Delightful Dining Experience Awaits</h2>
+            <h2 className="mb-6">{t('reservation.subtitle')}</h2>
             <p className="mb-8">
-              Whether you're planning a romantic dinner, family gathering, or business meeting, 
-              we're ready to serve you. Reserve your table now to ensure availability and let 
-              us prepare a memorable dining experience for you and your guests.
+            {t('reservation.description')}
             </p>
             <ul className="space-y-4">
               <li className="flex items-center">
                 <div className="bg-restaurant-primary/10 p-2 rounded-full mr-4">
                   <Clock size={20} className="text-restaurant-primary" />
                 </div>
-                <span>Open 7 days a week, breakfast, lunch and dinner service</span>
+                <span>{t('reservation.features.hours')}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-restaurant-primary/10 p-2 rounded-full mr-4">
                   <Users size={20} className="text-restaurant-primary" />
                 </div>
-                <span>Accommodations for parties of all sizes</span>
+                <span>{t('reservation.features.parties')}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-restaurant-primary/10 p-2 rounded-full mr-4">
                   <Calendar size={20} className="text-restaurant-primary" />
                 </div>
-                <span>Special events and private dining available</span>
+                <span>{t('reservation.features.events')}</span>
               </li>
             </ul>
           </motion.div>
@@ -93,12 +93,12 @@ export default function ReservationCTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-white rounded-lg shadow-lg p-8"
           >
-            <h3 className="text-2xl font-medium mb-6 text-center">Make a Reservation</h3>
+            <h3 className="text-2xl font-medium mb-6 text-center">{t('reservation.form.title')}</h3>
             
             {success ? (
               <div className="bg-green-50 border border-green-200 text-green-700 p-4 rounded-lg mb-6 text-center">
-                <p className="font-medium">Thank you for your reservation!</p>
-                <p className="text-sm mt-1">We will confirm your booking shortly.</p>
+                <p className="font-medium">{t('reservation.form.success.title')}</p>
+                <p className="text-sm mt-1">{t('reservation.form.success.message')}</p>
               </div>
             ) : null}
             
@@ -106,7 +106,7 @@ export default function ReservationCTA() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label htmlFor="date" className="block text-sm font-medium text-restaurant-dark mb-1">
-                    Date
+                  {t('reservation.form.date')}
                   </label>
                   <input
                     type="date"
@@ -119,7 +119,7 @@ export default function ReservationCTA() {
                 </div>
                 <div>
                   <label htmlFor="time" className="block text-sm font-medium text-restaurant-dark mb-1">
-                    Time
+                  {t('reservation.form.time')}
                   </label>
                   <select
                     id="time"
@@ -138,7 +138,7 @@ export default function ReservationCTA() {
               
               <div className="mb-4">
                 <label htmlFor="guests" className="block text-sm font-medium text-restaurant-dark mb-1">
-                  Number of Guests
+                {t('reservation.form.guests')}
                 </label>
                 <select
                   id="guests"
@@ -156,7 +156,7 @@ export default function ReservationCTA() {
               
               <div className="mb-4">
                 <label htmlFor="name" className="block text-sm font-medium text-restaurant-dark mb-1">
-                  Your Name
+                {t('reservation.form.name')}
                 </label>
                 <input
                   type="text"
@@ -171,7 +171,7 @@ export default function ReservationCTA() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-restaurant-dark mb-1">
-                    Email
+                  {t('reservation.form.email')}
                   </label>
                   <input
                     type="email"
@@ -184,7 +184,7 @@ export default function ReservationCTA() {
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-restaurant-dark mb-1">
-                    Phone
+                  {t('reservation.form.phone')}
                   </label>
                   <input
                     type="tel"
@@ -199,7 +199,7 @@ export default function ReservationCTA() {
               
               <div className="mb-6">
                 <label htmlFor="requests" className="block text-sm font-medium text-restaurant-dark mb-1">
-                  Special Requests (Optional)
+                {t('reservation.form.requests')}
                 </label>
                 <textarea
                   id="requests"
@@ -217,7 +217,7 @@ export default function ReservationCTA() {
                   "bg-restaurant-primary text-white hover:bg-restaurant-primary/90"
                 )}
               >
-                Confirm Reservation
+                {t('reservation.form.submit')}
               </button>
             </form>
           </motion.div>

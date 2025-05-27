@@ -6,8 +6,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { gallery } from "@/lib/data";
+import {useTranslations} from 'next-intl';
 
 export default function GalleryPreview() {
+  const t =  useTranslations("HomePage");
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
   // Only show 6 images for the preview
@@ -18,12 +20,11 @@ export default function GalleryPreview() {
       <div className="container-custom">
         <div className="text-center mb-12">
           <span className="text-restaurant-primary font-medium mb-2 inline-block">
-            Visual Journey
+          {t('gallery.title')}
           </span>
-          <h2 className="mb-4">Gallery</h2>
+          <h2 className="mb-4">{t('gallery.subtitle')}</h2>
           <p className="max-w-2xl mx-auto">
-            Take a visual tour of our restaurant, signature dishes, and special events. Each 
-            image captures the essence of the GoLab dining experience.
+          {t('gallery.description')}
           </p>
         </div>
         
@@ -62,7 +63,7 @@ export default function GalleryPreview() {
         
         <div className="text-center mt-12">
           <Link href="/gallery" className="btn-outline inline-flex items-center">
-            <span>View Full Gallery</span>
+            <span>{t('gallery.viewFullGallery')}</span>
             <ArrowRight size={16} className="ml-2" />
           </Link>
         </div>
