@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "HomePage": {
         "welcome": "GoLab Restaurant'a Hoşgeldiniz",
         "subtitle": "Otantik lezzetlerle en iyi yemek deneyimini yaşayın",
@@ -193,3 +194,73 @@
       "terms": "Kullanım Koşulları"
     }
   }
+=======
+  "HomePage": {
+    "welcome": "GoLab Restaurant'a Hoşgeldiniz",
+    "subtitle": "Otantik lezzetlerle en iyi yemek deneyimini yaşayın",
+    "heroSlides": {
+      "slide1": {
+        "title": "Otantik Mutfak",
+        "subtitle": "Geleneksel yemeklerin gerçek lezzetlerini keşfedin"
+      },
+      "slide2": {
+        "title": "Zarif Yemek Deneyimi",
+        "subtitle": "Sıcak ve davetkar atmosferimizde kendinizi kaybetmeye hazır olun"
+      },
+      "slide3": {
+        "title": "Usta Şefler",
+        "subtitle": "Şeflerimiz her yemeği tutkuyla hazırlıyor"
+      }
+    },
+    "viewMenu": "Menüyü Görüntüle",
+    "bookTable": "Masa Rezervasyonu",
+    "about": {
+      "title": "Hikayemiz",
+      "subtitle": "Şef Murat Bozok'un Sihirli Dokunuşuyla Lezzetli Bir Macera",
+      "description": "Golab Restaurant'ın mutfak sihirini yöneten kişi, dünya çapında saygı gören Şef Murat Bozok'tur. İstanbul'da doğup Amerika'da mükemmel bir eğitim aldıktan sonra, Michelin yıldızlı restoranlarda ustalık kazandı ve 2009'da Türkiye'ye döndü. Şimdi, her tabakta bir hikaye anlatan bu gastronomi sanatçısının yaratıcılığını keşfetmek ve lezzet deneyimine tanık olmak için sizi Golab Restaurant'ta bekliyoruz.",
+      "teamTitle": "Ekibimizle Tanışın",
+      "learnMore": "Hakkımızda Daha Fazla Bilgi"
+    },
+    "featuredMenu": {
+      "title": "Eşsiz Lezzetler",
+      "subtitle": "Öne Çıkan Menü",
+      "description": "Şeflerimizin seçtiği İran yemeklerini keşfedin, en kaliteli malzemeler ve mutfak uzmanlığıyla unutulmaz bir yemek deneyimi için hazırlanmıştır.",
+      "viewFullMenu": "Tüm Menüyü Görüntüle",
+      "categories": {
+        "all": "Tümü"
+      }
+    },
+    "gallery": {
+      "title": "Görsel Yolculuk",
+      "subtitle": "Galeri",
+      "description": "Restoranımız, imza yemeklerimiz ve özel etkinliklerimizden görsel bir tura çıkın. Her fotoğraf, GoLab yemek deneyiminin özünü yansıtır.",
+      "viewFullGallery": "Tüm Galeriyi Görüntüle"
+    },
+    "reservation": {
+      "title": "Masanızı Ayırtın",
+      "subtitle": "Muhteşem Bir Yemek Deneyimi Sizi Bekliyor",
+      "description": "Romantik bir akşam yemeği, aile buluşması veya iş toplantısı planlıyor olun, size hizmet etmeye hazırız. Yerinizi şimdi ayırtın ve size unutulmaz bir yemek deneyimi hazırlamamıza izin verin.",
+      "features": {
+        "hours": "Haftanın 7 günü, kahvaltı, öğle ve akşam yemeği servisi",
+        "parties": "Her büyüklükte grup için uygun düzenlemeler",
+        "events": "Özel etkinlikler ve özel yemek seçenekleri mevcut"
+      },
+      "form": {
+        "title": "Rezervasyon Yapın",
+        "date": "Tarih",
+        "time": "Saat",
+        "guests": "Misafir Sayısı",
+        "name": "Adınız",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "requests": "Özel İstekler (İsteğe Bağlı)",
+        "submit": "Rezervasyonu Onayla",
+        "success": {
+          "title": "Rezervasyonunuz için teşekkürler!",
+          "message": "Rezervasyonunuzu en kısa sürede onaylayacağız."
+        }
+      }
+    }
+  }
+}
+>>>>>>> ae4672777477814bb738c053c7282fec56b04743
