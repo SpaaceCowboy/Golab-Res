@@ -7,8 +7,10 @@ import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { location } from "@/lib/data";
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
+  const t = useTranslations("Contact")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -57,9 +59,9 @@ export default function ContactPage() {
         </div>
         
         <div className="container-custom relative z-20 text-center">
-          <h1 className="text-white mb-4">Contact Us</h1>
+          <h1 className="text-white mb-4">{t("title")}</h1>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
-            Have a question or want to make a reservation? We'd love to hear from you.
+            {t("subtitle")}
           </p>
         </div>
       </section>
@@ -76,12 +78,11 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
             >
               <span className="text-restaurant-primary font-medium mb-2 inline-block">
-                Get in Touch
+                {t("little")}
               </span>
-              <h2 className="mb-6">Contact Information</h2>
+              <h2 className="mb-6">{t("info.title")}</h2>
               <p className="mb-8">
-                We're here to assist you with any questions, concerns, or feedback you may have.
-                Reach out to us through any of the following methods, and we'll respond promptly.
+                {t("info.description")} 
               </p>
               
               <div className="space-y-6">
@@ -90,7 +91,7 @@ export default function ContactPage() {
                     <MapPin className="text-restaurant-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">Address</h3>
+                    <h3 className="text-lg font-medium mb-1">{t("info.address")}</h3>
                     <p className="text-restaurant-dark/80">
                     Zeytinlik, Ataköy Marina, 34140 Bakırköy, İstanbul
                     </p>
@@ -102,7 +103,7 @@ export default function ContactPage() {
                     <Phone className="text-restaurant-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">Phone</h3>
+                    <h3 className="text-lg font-medium mb-1">{t("info.phone")}</h3>
                     <p className="text-restaurant-dark/80">
                       <a href={`tel:${location.phone}`} className="hover:text-restaurant-primary">
                         {location.phone}
@@ -116,7 +117,7 @@ export default function ContactPage() {
                     <Mail className="text-restaurant-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">Email</h3>
+                    <h3 className="text-lg font-medium mb-1">{t("info.email")}</h3>
                     <p className="text-restaurant-dark/80">
                       <a href={`mailto:${location.email}`} className="hover:text-restaurant-primary">
                         {location.email}
@@ -130,7 +131,7 @@ export default function ContactPage() {
                     <Clock className="text-restaurant-primary" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-medium mb-1">Hours</h3>
+                    <h3 className="text-lg font-medium mb-1">{t("info.hours")}</h3>
                     <ul className="text-restaurant-dark/80 space-y-1">
                       
                         <li className="flex justify-between">
@@ -153,12 +154,12 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
               className="bg-restaurant-light p-8 rounded-lg shadow-md"
             >
-              <h2 className="text-2xl font-medium mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-medium mb-6">{t("form.title")}</h2>
               
               {success && (
                 <div className="bg-green-50 border border-green-200 text-green-700 p-4 rounded-lg mb-6">
-                  <p className="font-medium">Thank you for your message!</p>
-                  <p className="text-sm mt-1">We will get back to you as soon as possible.</p>
+                  <p className="font-medium">{t("form.success")}</p>
+                  <p className="text-sm mt-1">{t("form.successDetail")}</p>
                 </div>
               )}
               
@@ -166,7 +167,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-restaurant-dark mb-1">
-                      Your Name *
+                    {t("form.name")} *
                     </label>
                     <input
                       type="text"
@@ -180,7 +181,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-restaurant-dark mb-1">
-                      Email Address *
+                    {t("form.email")} *
                     </label>
                     <input
                       type="email"
@@ -197,7 +198,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-restaurant-dark mb-1">
-                      Phone Number
+                    {t("form.phone")}
                     </label>
                     <input
                       type="tel"
@@ -210,7 +211,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-restaurant-dark mb-1">
-                      Subject *
+                    {t("form.subject")} *
                     </label>
                     <select
                       id="subject"
@@ -220,18 +221,18 @@ export default function ContactPage() {
                       className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-restaurant-primary"
                       required
                     >
-                      <option value="">Select a subject</option>
-                      <option value="reservation">Reservation Inquiry</option>
-                      <option value="feedback">Feedback</option>
-                      <option value="catering">Catering Services</option>
-                      <option value="general">General Inquiry</option>
+                      <option value="">{t("Subject.title")}</option>
+                      <option value="reservation">{t("Subject.reservation")}</option>
+                      <option value="feedback">{t("Subject.feedback")}</option>
+                      <option value="catering">{t("Subject.service")}</option>
+                      <option value="general">{t("Subject.general")}</option>
                     </select>
                   </div>
                 </div>
                 
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-medium text-restaurant-dark mb-1">
-                    Your Message *
+                  {t("form.message")} *
                   </label>
                   <textarea
                     id="message"

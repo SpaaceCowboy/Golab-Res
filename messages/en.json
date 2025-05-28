@@ -22,10 +22,10 @@
       "title": "Our Story",
       "subtitle": "A Delicious Adventure with Chef Murat Bozok Magical Touch",
       "description": "The person who directs the culinary magic of Golab Restaurant is the globally respected Chef Murat Bozok. After being born in Istanbul and receiving an excellent education in America, he gained mastery in Michelin star restaurants and returned to Turkey in 2009. Now, we are waiting for you at Golab Restaurant to witness the taste experience and enjoy the creativity of this gastronomic artist who tells a story in each plate.",
-<<<<<<< HEAD
+
       "description2": "Today, our award-winning chefs continue this tradition, blending time-honored recipes with contemporary techniques to deliver unforgettable culinary creations. Every dish tells a story of heritage, innovation, and our unwavering commitment to quality.",
-=======
->>>>>>> ae4672777477814bb738c053c7282fec56b04743
+
+
       "teamTitle": "Meet Our Team",
       "learnMore": "Learn More About Us"
     },
@@ -69,7 +69,7 @@
         }
       }
     }
-<<<<<<< HEAD
+
   }, 
   "Navigation": {
     "home": "Home",
@@ -114,9 +114,11 @@
     }
   },
   "Contact": {
+    "little": "Get in Touch",
     "title": "Contact Us",
     "subtitle": "Have a question or want to make a reservation? We'd love to hear from you.",
     "form": {
+      "title": "Send Us a Message",
       "name": "Your Name",
       "email": "Email Address",
       "phone": "Phone Number",
@@ -125,6 +127,13 @@
       "send": "Send Message",
       "success": "Thank you for your message!",
       "successDetail": "We will get back to you as soon as possible."
+    },
+    "Subject": {
+      "title": "Select a subject",
+      "reservation": "Reservation Inquiry",
+      "feedback": "Feedback",
+      "service": "Catering Services",
+      "general": "General Inquiry"
     },
     "info": {
       "title": "Contact Information",
@@ -161,10 +170,20 @@
     "title": "Book a Table",
     "subtitle": "Reserve your dining experience at GoLab Restaurant",
     "form": {
+      "reserve": "Make a Reservation",
       "date": "Date",
       "time": "Time",
       "guests": "Number of Guests",
       "occasion": "Occasion (Optional)",
+      "for": {
+        "ocassion": "Select an occasion",
+        "birthday": "Birthday",
+        "anniversary": "Anniversarry",
+        "date": "Date night",
+        "business": "Business Meal",
+        "other": "other"
+      },
+      "contactinf": "Contact Information",
       "name": "Full Name",
       "email": "Email Address",
       "phone": "Phone Number",
@@ -173,9 +192,24 @@
       "confirm": "Confirm Reservation",
       "success": {
         "title": "Reservation Confirmed!",
-        "message": "Thank you for choosing GoLab Restaurant. We're looking forward to serving you!"
-      }
-    }
+        "message": "Thank you for choosing GoLab Restaurant. We're looking forward to serving you!",
+        "details": "Reservation Details",
+        "date": "Date & Time",
+        "guests": "Number of Guests",
+        "Reserved": "Reserved By",
+        "contact": "Contact",
+        "occasion": "Occasion",
+        "request": "Special Request",
+        "confirmation": "Confirmation Sent",
+        "description": "A confirmation email has been sent to your email. If you need to modify or cancel your reservation, please contact us at 05354124005."       
+      },
+      "allergy": "Allergies, dietary restrictions, special occasions, seating preferences..."
+    },
+    "information": "Reservation Information",
+    "opening": "Opening Hours",
+    "policy": "Reservation Policy",
+    "assist": "Need Assistance?",
+    "contact": "For immediate assistance or special arrangements, please contact us directly:"
   },
   "Footer": {
     "Navigation": {
@@ -195,7 +229,5 @@
     "rights": "© {year} GoLab Restaurant. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
-=======
->>>>>>> ae4672777477814bb738c053c7282fec56b04743
-  }
+}
 }

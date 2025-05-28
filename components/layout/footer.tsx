@@ -1,4 +1,4 @@
-import Link from "next/link";
+import {Link} from '@/i18n/navigation';
 import { Mail, Phone, MapPin, Clock, Instagram, Facebook, Twitter } from "lucide-react";
 import { location } from "@/lib/data";
 import {useTranslations} from 'next-intl';

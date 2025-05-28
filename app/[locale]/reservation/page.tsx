@@ -7,6 +7,7 @@ import { Calendar, Clock, Users, Check, Info, Phone, Mail } from "lucide-react";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { location } from "@/lib/data";
+import { useTranslations } from "next-intl";
 
 const timeSlots = [
   "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", 
@@ -16,6 +17,7 @@ const timeSlots = [
 ];
 
 export default function ReservationPage() {
+  const t = useTranslations("Reservation")
   const [formData, setFormData] = useState({
     date: "",
     time: "",
@@ -93,9 +95,9 @@ export default function ReservationPage() {
         </div>
         
         <div className="container-custom relative z-20 text-center">
-          <h1 className="text-white mb-4">Book a Table</h1>
+          <h1 className="text-white mb-4">{t("title")}</h1>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
-            Reserve your dining experience at GoLab Restaurant
+            {t("subtitle")}
           </p>
         </div>
       </section>
@@ -113,39 +115,39 @@ export default function ReservationPage() {
                 <Check size={40} className="text-green-600" />
               </div>
               
-              <h2 className="text-3xl font-medium mb-4">Reservation Confirmed!</h2>
+              <h2 className="text-3xl font-medium mb-4">{t("form.success.title")}</h2>
               <p className="text-lg mb-6">
-                Thank you for choosing GoLab Restaurant. We're looking forward to serving you!
+              {t("form.success.message")}
               </p>
               
               <div className="bg-restaurant-light p-6 rounded-lg mb-8 text-left">
-                <h3 className="text-xl font-medium mb-4">Reservation Details</h3>
+                <h3 className="text-xl font-medium mb-4">{t("form.success.details")}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <p className="text-sm text-gray-500">Date & Time</p>
+                    <p className="text-sm text-gray-500">{t("form.success.date")}</p>
                     <p className="font-medium">{formData.date} at {formData.time}</p>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500">Number of Guests</p>
+                    <p className="text-sm text-gray-500">{t("form.success.guests")}</p>
                     <p className="font-medium">{formData.guests} {formData.guests === 1 ? 'Guest' : 'Guests'}</p>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500">Reserved By</p>
+                    <p className="text-sm text-gray-500">{t("form.success.Reserved")}</p>
                     <p className="font-medium">{formData.name}</p>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-500">Contact</p>
+                    <p className="text-sm text-gray-500">{t("form.success.contact")}</p>
                     <p className="font-medium">{formData.phone}</p>
                   </div>
                   {formData.occasion && (
                     <div className="md:col-span-2">
-                      <p className="text-sm text-gray-500">Occasion</p>
+                      <p className="text-sm text-gray-500">{t("form.success.occasion")}</p>
                       <p className="font-medium">{formData.occasion}</p>
                     </div>
                   )}
                   {formData.specialRequests && (
                     <div className="md:col-span-2">
-                      <p className="text-sm text-gray-500">Special Requests</p>
+                      <p className="text-sm text-gray-500">{t("form.success.request")}</p>
                       <p className="font-medium">{formData.specialRequests}</p>
                     </div>
                   )}
@@ -155,19 +157,13 @@ export default function ReservationPage() {
               <div className="flex items-start mb-8 bg-blue-50 p-4 rounded-lg">
                 <Info size={24} className="text-blue-500 mr-3 flex-shrink-0" />
                 <div className="text-left">
-                  <p className="font-medium text-blue-700">Confirmation Sent</p>
+                  <p className="font-medium text-blue-700">{t("form.success.confirmation")}</p>
                   <p className="text-blue-600 text-sm">
-                    A confirmation email has been sent to {formData.email}. If you need to modify or cancel your reservation, please contact us at {location.phone}.
+                  {t("form.success.description")}
                   </p>
                 </div>
               </div>
               
-              <a
-                href="/"
-                className="btn-primary mx-auto"
-              >
-                Return to Homepage
-              </a>
             </motion.div>
           </div>
         </section>
@@ -178,13 +174,13 @@ export default function ReservationPage() {
               {/* Form */}
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 rounded-lg shadow-md">
-                  <h2 className="text-2xl font-medium mb-6">Make a Reservation</h2>
+                  <h2 className="text-2xl font-medium mb-6">{t("form.reserve")}</h2>
                   
                   <form onSubmit={handleSubmit}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                       <div>
                         <label htmlFor="date" className="block text-sm font-medium text-restaurant-dark mb-1">
-                          Date *
+                        {t("form.date")} *
                         </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -205,7 +201,7 @@ export default function ReservationPage() {
                       </div>
                       <div>
                         <label htmlFor="time" className="block text-sm font-medium text-restaurant-dark mb-1">
-                          Time *
+                        {t("form.time")} *
                         </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -230,7 +226,7 @@ export default function ReservationPage() {
                       </div>
                       <div>
                         <label htmlFor="guests" className="block text-sm font-medium text-restaurant-dark mb-1">
-                          Number of Guests *
+                        {t("form.guests")} *
                         </label>
                         <div className="relative">
                           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -252,7 +248,7 @@ export default function ReservationPage() {
                       </div>
                       <div>
                         <label htmlFor="occasion" className="block text-sm font-medium text-restaurant-dark mb-1">
-                          Occasion (Optional)
+                        {t("form.occasion")}
                         </label>
                         <select
                           id="occasion"
@@ -261,22 +257,22 @@ export default function ReservationPage() {
                           onChange={handleChange}
                           className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-restaurant-primary"
                         >
-                          <option value="">Select an occasion</option>
-                          <option value="Birthday">Birthday</option>
-                          <option value="Anniversary">Anniversary</option>
-                          <option value="Date Night">Date Night</option>
-                          <option value="Business Meal">Business Meal</option>
-                          <option value="Other">Other</option>
+                          <option value="">{t("form.for.ocassion")}</option>
+                          <option value="Birthday">{t("form.for.birthday")}</option>
+                          <option value="Anniversary">{t("form.for.anniversary")}</option>
+                          <option value="Date Night">{t("form.for.date")}</option>
+                          <option value="Business Meal">{t("form.for.business")}</option>
+                          <option value="Other">{t("form.for.other")}</option>
                         </select>
                       </div>
                     </div>
                     
-                    <h3 className="text-xl font-medium mb-4">Contact Information</h3>
+                    <h3 className="text-xl font-medium mb-4">{t("form.contactinf")}</h3>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-restaurant-dark mb-1">
-                          Full Name *
+                        {t("form.name")}*
                         </label>
                         <input
                           type="text"
@@ -292,7 +288,7 @@ export default function ReservationPage() {
                       </div>
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium text-restaurant-dark mb-1">
-                          Email Address *
+                        {t("form.email")} *
                         </label>
                         <input
                           type="email"
@@ -308,7 +304,7 @@ export default function ReservationPage() {
                       </div>
                       <div className="md:col-span-2">
                         <label htmlFor="phone" className="block text-sm font-medium text-restaurant-dark mb-1">
-                          Phone Number *
+                        {t("form.phone")}*
                         </label>
                         <input
                           type="tel"
@@ -326,7 +322,7 @@ export default function ReservationPage() {
                     
                     <div className="mb-6">
                       <label htmlFor="specialRequests" className="block text-sm font-medium text-restaurant-dark mb-1">
-                        Special Requests (Optional)
+                      {t("form.specialRequests")}
                       </label>
                       <textarea
                         id="specialRequests"
@@ -335,7 +331,7 @@ export default function ReservationPage() {
                         onChange={handleChange}
                         rows={4}
                         className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-restaurant-primary"
-                        placeholder="Allergies, dietary restrictions, special occasions, seating preferences..."
+                        placeholder={t("form.allergy")}
                       ></textarea>
                     </div>
                     
@@ -354,7 +350,7 @@ export default function ReservationPage() {
                           />
                         </div>
                         <label htmlFor="termsAccepted" className="ml-2 text-sm text-gray-700">
-                          I acknowledge the <a href="/terms" className="text-restaurant-primary hover:underline">reservation policy</a> and understand that a 15-minute grace period is provided, after which the reservation may be released.
+                        {t("form.terms")}
                         </label>
                       </div>
                       {errors.termsAccepted && <p className="text-red-500 text-xs mt-1">{errors.termsAccepted}</p>}
@@ -364,7 +360,7 @@ export default function ReservationPage() {
                       type="submit"
                       className="w-full btn-primary py-4"
                     >
-                      Confirm Reservation
+                      {t("form.confirm")}
                     </button>
                   </form>
                 </div>
@@ -379,14 +375,14 @@ export default function ReservationPage() {
                   transition={{ duration: 0.6 }}
                   className="bg-white p-6 rounded-lg shadow-md mb-6"
                 >
-                  <h3 className="text-xl font-medium mb-4">Reservation Information</h3>
+                  <h3 className="text-xl font-medium mb-4">{t("information")}</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
                       <div className="bg-restaurant-primary/10 p-2 rounded-full mr-3">
                         <Clock size={18} className="text-restaurant-primary" />
                       </div>
                       <div>
-                        <h4 className="font-medium">Opening Hours</h4>
+                        <h4 className="font-medium">{t("opening")}</h4>
                         <ul className="text-sm text-gray-600 space-y-1">
                           {location.hours.map((hour, index) => (
                             <li key={index}>
@@ -401,7 +397,7 @@ export default function ReservationPage() {
                         <Info size={18} className="text-restaurant-primary" />
                       </div>
                       <div>
-                        <h4 className="font-medium">Reservation Policy</h4>
+                        <h4 className="font-medium">{t("policy")}</h4>
                         <ul className="text-sm text-gray-600 space-y-2 mt-1">
                           {/*
                           <li>• Reservations can be made up to 30 days in advance</li>
@@ -422,9 +418,9 @@ export default function ReservationPage() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="bg-restaurant-primary/10 p-6 rounded-lg"
                 >
-                  <h3 className="text-xl font-medium mb-4">Need Assistance?</h3>
+                  <h3 className="text-xl font-medium mb-4">{t("assist")}</h3>
                   <p className="mb-4 text-gray-700">
-                    For immediate assistance or special arrangements, please contact us directly:
+                  {t("contact")}
                   </p>
                   <div className="space-y-2">
                     <div className="flex items-center">

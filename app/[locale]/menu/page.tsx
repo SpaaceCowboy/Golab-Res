@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import {Link} from '@/i18n/navigation';
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import MenuList from "@/components/menu/menu-list";

@@ -54,7 +54,7 @@ export default function GalleryPage() {
         <div className="container-custom relative z-20 text-center">
           <h1 className="text-white mb-4">{t("")}</h1>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
-            Take a visual journey through our restaurant, cuisine, and memorable moments
+            {t("subtitle")}
           </p>
         </div>
       </section>
