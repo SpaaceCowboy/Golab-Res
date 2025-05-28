@@ -9,6 +9,7 @@ import {useTranslations} from 'next-intl';
 
 export default function MenuList() {
   const t =  useTranslations("Menu");
+  ["margarita", "mojito", "espressoMartini", "bikiniMartini"]
   const [searchTerm, setSearchTerm] = useState("");
   const categories = Array.from(new Set(menuItems.map(item => item.category)));
   
@@ -93,7 +94,7 @@ export default function MenuList() {
                     </div>
                     <div className="w-2/3 p-4">
                       <div className="flex justify-between">
-                        <h3 className="text-lg font-medium">{menuItem.name}</h3>
+                        <h3 className="text-lg font-medium">{t("HomePage")}{menuItem.name}</h3>
                         <span className="text-restaurant-primary font-medium">{menuItem.price}</span>
                       </div>
                       <p className="text-sm text-gray-600 mt-1 mb-2">{menuItem.description}</p>
@@ -146,13 +147,7 @@ export default function MenuList() {
                         <span className="text-restaurant-primary font-medium">{menuItem.price}</span>
                       </div>
                       <p className="text-sm text-gray-600 mt-1 mb-2">{menuItem.description}</p>
-                      <div className="flex flex-wrap gap-1 mt-2">
-                        {menuItem.dietaryInfo && menuItem.dietaryInfo.map((info, i) => (
-                          <span key={i} className="text-xs px-2 py-0.5 bg-restaurant-primary/10 text-restaurant-primary rounded-full">
-                            {info}
-                          </span>
-                        ))}
-                      </div>
+
                     </div>
                   </motion.div>
                 ))}

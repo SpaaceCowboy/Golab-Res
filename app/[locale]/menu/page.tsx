@@ -13,6 +13,7 @@ export const metadata = {
 
 export default function MenuPage() {
   const t =  useTranslations("Menu");
+  
   return (
     <main>
       <Header />

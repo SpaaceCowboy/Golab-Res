@@ -6,6 +6,7 @@ import {Link} from '@/i18n/navigation';
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
 const slides = [
   {
@@ -29,6 +30,7 @@ const slides = [
 ];
 
 export default function HeroSection() {
+  const t = useTranslations("HomePage")
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -48,7 +50,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.7 }}
           className="absolute inset-0"
         >
           <div className="absolute inset-0 bg-black/50 z-10" />
@@ -74,7 +76,7 @@ export default function HeroSection() {
             className="max-w-2xl"
           >
             <span className="inline-block text-restaurant-primary font-medium text-lg md:text-xl mb-4">
-              Welcome to GoLab Restaurant
+              {t("welcome")}
             </span>
             <h1 className="text-white mb-6">
               {slides[currentSlide].title}
@@ -84,13 +86,13 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/menu" className="btn-primary">
-                View Our Menu
+              {t("viewMenu")}
               </Link>
               <Link 
                 href="/reservation" 
                 className="bg-transparent border-2 border-white text-white px-6 py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-white hover:text-restaurant-dark"
               >
-                Book a Table
+                {t("bookTable")}
               </Link>
             </div>
           </motion.div>

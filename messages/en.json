@@ -229,5 +229,23 @@
     "rights": "© {year} GoLab Restaurant. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
-}
+},
+"MenuItem": {
+        "margarita": {
+          "name": "Margarita",
+          "description": "Tekila, portakal likörü, limon kabuğu"
+        },
+        "mojito": {
+          "name": "Gerçek Mojito",
+          "description": "Beyaz rom, limon suyu, nane, soda, şurup"
+        },
+        "espressoMartini": {
+          "name": "Espresso Martini",
+          "description": "Votka, krema, kahve likörü"
+        },
+        "bikiniMartini": {
+          "name": "Bikini Martini",
+          "description": "Malibu, votka, ananas suyu, nar şurubu"
+        }
+  }
 }

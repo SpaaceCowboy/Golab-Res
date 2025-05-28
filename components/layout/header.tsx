@@ -6,16 +6,19 @@ import { Menu, X, PhoneCall, ShoppingCart } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import LocaleSwitcher from "./LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
-const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Menu", href: "/menu" },
-  { name: "About", href: "/about" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Contact", href: "/contact" },
-];
+
 
 export default function Header() {
+  const t = useTranslations("Navigation")
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Menu", href: "/menu" },
+    { name: "About", href: "/about" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
+  ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
