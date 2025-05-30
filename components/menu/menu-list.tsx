@@ -95,7 +95,7 @@ export default function MenuList() {
                     <div className="w-2/3 p-4">
                       <div className="flex justify-between">
                         <h3 className="text-lg font-medium">{t("HomePage")}{menuItem.name}</h3>
-                        <span className="text-restaurant-primary font-medium">{menuItem.price}</span>
+                        <span className="text-[#015440] font-medium">{menuItem.price}</span>
                       </div>
                       <p className="text-sm text-gray-600 mt-1 mb-2">{menuItem.description}</p>
                       {menuItem.ingredients && (
@@ -144,7 +144,7 @@ export default function MenuList() {
                     <div className="w-2/3 p-4">
                       <div className="flex justify-between">
                         <h3 className="text-lg font-medium">{menuItem.name}</h3>
-                        <span className="text-restaurant-primary font-medium">{menuItem.price}</span>
+                        <span className="text-[#015440] font-medium">{menuItem.price}</span>
                       </div>
                       <p className="text-sm text-gray-600 mt-1 mb-2">{menuItem.description}</p>
 

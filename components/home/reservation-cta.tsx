@@ -214,7 +214,7 @@ export default function ReservationCTA() {
                 type="submit" 
                 className={cn(
                   "w-full py-3 rounded-md font-medium transition-all duration-300",
-                  "bg-restaurant-primary text-white hover:bg-restaurant-primary/90"
+                  "bg-[#015440] text-white hover:bg-restaurant-primary/90"
                 )}
               >
                 {t('reservation.form.submit')}

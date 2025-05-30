@@ -247,7 +247,7 @@ export default function ContactPage() {
                 
                 <button 
                   type="submit" 
-                  className="bg-restaurant-primary text-white px-6 py-3 rounded-md flex items-center justify-center font-medium hover:bg-restaurant-primary/90 transition-colors duration-300"
+                  className="bg-[#015440] text-white px-6 py-3 rounded-md flex items-center justify-center font-medium hover:bg-restaurant-primary/90 transition-colors duration-300"
                 >
                   <Send size={18} className="mr-2" />
                   Send Message

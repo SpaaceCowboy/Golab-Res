@@ -44,45 +44,35 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Slider Background */}
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={slides[currentSlide].id}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.7 }}
+      
+        <div
           className="absolute inset-0"
         >
           <div className="absolute inset-0 bg-black/50 z-10" />
           <Image
-            src={slides[currentSlide].image}
-            alt={slides[currentSlide].title}
+            src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Elegant Dining"
             fill
             className="object-cover"
             priority
           />
-        </motion.div>
-      </AnimatePresence>
+        </div>
+      
 
       {/* Content */}
       <div className="container-custom relative z-20 h-full flex flex-col justify-center">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={slides[currentSlide].id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+        
+          <div
             className="max-w-2xl"
           >
             <span className="inline-block text-restaurant-primary font-medium text-lg md:text-xl mb-4">
               {t("welcome")}
             </span>
             <h1 className="text-white mb-6">
-              {slides[currentSlide].title}
+            Authentic Cuisine
             </h1>
             <p className="text-white/90 text-lg md:text-xl mb-8">
-              {slides[currentSlide].subtitle}
+              Experience the true flavors of traditional cooking
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/menu" className="btn-primary">
@@ -95,11 +85,11 @@ export default function HeroSection() {
                 {t("bookTable")}
               </Link>
             </div>
-          </motion.div>
-        </AnimatePresence>
+          </div>
+        
       </div>
-
-      {/* Slider Indicators */}
+      {/*
+      {/* Slider Indicators   
       <div className="absolute bottom-8 left-0 right-0 z-20">
         <div className="container-custom">
           <div className="flex justify-center space-x-3">
@@ -118,6 +108,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+      */}
     </section>
   );
 }

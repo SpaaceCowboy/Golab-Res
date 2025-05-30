@@ -146,7 +146,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-restaurant-primary text-white px-6 py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-restaurant-primary/90 hover:shadow-md;
+    @apply bg-[#015440] text-white px-6 py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-restaurant-primary/90 hover:shadow-md;
   }
   
   .btn-secondary {
@@ -158,6 +158,6 @@
   }
   
   .btn-outline {
-    @apply border-2 border-restaurant-primary text-restaurant-primary px-6 py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-restaurant-primary hover:text-white;
+    @apply border-2 border-[#015440] text-[#015440] px-6 py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-restaurant-primary hover:text-white;
   }
 }

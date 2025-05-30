@@ -49,7 +49,7 @@ export default function AboutSection() {
             <p className="mb-8">
               {t('about.description2')}
             </p>
-            
+            {/*
             <div className="mb-10">
               <h3 className="text-xl mb-6">{t('about.teamTitle')}</h3>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -69,6 +69,7 @@ export default function AboutSection() {
                 ))}
               </div>
             </div>
+            */}
             
             <Link href="/about" className="btn-outline inline-flex items-center">
               <span>{t('about.learnMore')}</span>

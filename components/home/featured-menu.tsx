@@ -50,7 +50,7 @@ export default function FeaturedMenu() {
           <button
             className={`px-4 py-2 rounded-full transition-colors duration-300 ${
               activeCategory === "All"
-                ? "bg-restaurant-primary text-white"
+                ? "bg-[#015440] text-white"
                 : "bg-gray-100 text-restaurant-dark hover:bg-gray-200"
             }`}
             onClick={() => setActiveCategory("All")}
@@ -62,7 +62,7 @@ export default function FeaturedMenu() {
               key={category.id}
               className={`px-4 py-2 rounded-full transition-colors duration-300 ${
                 activeCategory === category.name
-                  ? "bg-restaurant-primary text-white"
+                  ? "bg-[#015440] text-white"
                   : "bg-gray-100 text-restaurant-dark hover:bg-gray-200"
               }`}
               onClick={() => setActiveCategory(category.name)}
@@ -90,7 +90,7 @@ export default function FeaturedMenu() {
                   className="object-cover menu-item-image"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                <div className="absolute top-3 right-3 bg-restaurant-primary text-white px-3 py-1 rounded-full text-sm">
+                <div className="absolute top-3 right-3 bg-[#015440] text-white px-3 py-1 rounded-full text-sm">
                   {item.price}
                 </div>
               </div>
