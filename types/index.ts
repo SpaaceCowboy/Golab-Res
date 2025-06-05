@@ -12,11 +12,155 @@ export interface MenuItem {
   dietaryInfo?: string[];
 }
 
+export interface Breakfast {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Appetizers {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Maincourse {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Iraniandishes {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Cocktails {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Pizza {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Burgers {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Pasta {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Desserts {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Coffeeandtea {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Softdrinks {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Salads {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Milkshakesmoothies {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}export interface Alchoholbottles {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}export interface Beer {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+export interface Champagne {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  image: string;
+  category: string;
+  featured: boolean;
+}
+
 export interface Category {
   id: number;
   name: string;
   description: string;
   image: string;
+  link: string;
 }
 
 export interface Testimonial {
