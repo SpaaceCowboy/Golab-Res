@@ -132,7 +132,7 @@
   
   .fancy-border::before, .fancy-border::after {
     content: '';
-    @apply absolute w-8 h-8 border-restaurant-primary;
+    @apply absolute w-8 h-8 border-[#015440];
   }
   
   .fancy-border::before {

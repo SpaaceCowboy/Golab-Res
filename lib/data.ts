@@ -1542,6 +1542,15 @@ export const menuItems: MenuItem[] = [
     category: 'Champagne',
     featured: false,
   },
+  {
+    id: 163,
+    name: 'SARAFIN SHIRAZ ',
+    description: '2022 RED WINE FROM TURKEY  -- Notes : plum, raspberry  Hints of coffee and vanilla ',
+    price: '₺4200',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_6591166e773543b39a85698e5.jpg',
+    category: 'Wine',
+    featured: false,
+  },
 
   
 ];
@@ -1551,98 +1560,104 @@ export const categories: Category[] = [
     id: 1,
     name: 'Breakfast',
     description: "Start your day with our delicious breakfast options.",
-    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/11/Copy-of-DSC09992-1.jpg',
   },
   {
     id: 2,
     name: 'Appetizers',
     description: 'Start your meal with our delicious bite-sized starters.',
-    image: 'https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09513-3.jpg',
   },
   {
     id: 3,
     name: 'Main Course',
     description: 'Authentic dishes prepared with traditional recipes and fresh ingredients.',
-    image: 'https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09691-2-1-1.jpg',
   },
   {
     id: 4,
     name: 'Iranian Dishes',
     description: 'Aromatic rice dishes cooked to perfection with herbs and spices.',
-    image: 'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/DSC00410-1.jpg',
   },
   {
     id: 12,
     name: 'Cocktails',
     description: 'Refreshing alcoholic drinks to accompany your meal.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/DSC00487-scaled.jpg',
   },
   {
     id: 6,
     name: 'Pizza',
     description: 'Delicious pizza to satisfy your cravings.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/10/Kaburga-PIZZA-Roast-Beaf-Pizza.webp',
   },
   {
     id: 7,
     name: 'Burgers',
     description: 'Juicy burgers to satisfy your cravings.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://vulpine-422382743.imgix.net/IMG_2876.JPG',
   },
   {
     id: 8,
     name: 'Pasta',
     description: 'Creamy pasta to satisfy your cravings.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/01/IMG_2115-1.jpg',
   },
   {
     id: 9,
     name: 'Desserts',
     description: 'Sweet treats to end your meal on a delightful note.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://vulpine-422382743.imgix.net/IMG_2868.JPG',
   },
   {
     id: 10,
     name: 'Coffee and Tea',
     description: 'Refreshing coffee and tea to accompany your meal.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1677971552_edited.jpg',
   },
   {
     id: 11,
     name: "Soft Drinks",
     description: 'Refreshing soft drinks to accompany your meal.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_f00136be7cfb4215a04823264-e1727375968566.jpg',
   },
   {
     id: 5,
     name: 'Salads',
     description: 'Fresh and healthy salads to accompany your meal.',
-    image: 'https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685783427.jpg',
   },
   {
     id: 13,
     name: 'Milkshake & Smoothies',
     description: 'Refreshing milkshake and smoothies to accompany your meal.',
-    image: 'https://images.pexels.com/photos/14705344/pexels-photo-14705344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2025/05/5828033156681419764.jpg',
   },
   {
     id:14,
     name: "Alchohol Bottles",
     description: "",
-    image: ""
+    image: "https://golabrestaurant.com/wp-content/uploads/2024/01/EZ_00862-1-1-e1706165013687.jpg"
   },
   {
     id:15,
     name: "Beer",
     description: "",
-    image: ""
+    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/IMG_2529-scaled.jpg"
   },
   // champagne
   {
     id:16,
     name: "Champagne",
     description: "",
-    image: "" 
+    image: "https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_b2f059e2f4024aa8b2a6c8493.jpg" 
+   },
+   {
+    id:17,
+    name: "Wine",
+    description: "",
+    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/CASTELLANI.jpg"
    }
   
 
@@ -1669,7 +1684,7 @@ export const location: Location = {
   zip: '90210',
   phone: '05354124005',
   email: 'golab.brasserie@gmail.com',
-  latitude: 34.052235,
+  latitude: 34.052235,                                                                                
   longitude: -118.243683,
   hours: [
     { day: 'EveryDay', open: '10:00AM', close: '00:30PM' },

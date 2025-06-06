@@ -19,7 +19,7 @@ export default function GalleryPreview() {
     <section className="section bg-restaurant-light">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <span className="text-restaurant-primary font-medium mb-2 inline-block">
+          <span className="text-[#015440] font-medium mb-2 inline-block">
           {t('gallery.title')}
           </span>
           <h2 className="mb-4">{t('gallery.subtitle')}</h2>

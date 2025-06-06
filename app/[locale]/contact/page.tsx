@@ -77,7 +77,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-restaurant-primary font-medium mb-2 inline-block">
+              <span className="text-[#015440] font-medium mb-2 inline-block">
                 {t("little")}
               </span>
               <h2 className="mb-6">{t("info.title")}</h2>
@@ -88,7 +88,7 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-restaurant-primary/10 p-3 rounded-full mr-4">
-                    <MapPin className="text-restaurant-primary" size={24} />
+                    <MapPin className="text-[#015440]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-1">{t("info.address")}</h3>
@@ -100,7 +100,7 @@ export default function ContactPage() {
                 
                 <div className="flex items-start">
                   <div className="bg-restaurant-primary/10 p-3 rounded-full mr-4">
-                    <Phone className="text-restaurant-primary" size={24} />
+                    <Phone className="text-[#015440]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-1">{t("info.phone")}</h3>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                 
                 <div className="flex items-start">
                   <div className="bg-restaurant-primary/10 p-3 rounded-full mr-4">
-                    <Mail className="text-restaurant-primary" size={24} />
+                    <Mail className="text-[#015440]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-1">{t("info.email")}</h3>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 
                 <div className="flex items-start">
                   <div className="bg-restaurant-primary/10 p-3 rounded-full mr-4">
-                    <Clock className="text-restaurant-primary" size={24} />
+                    <Clock className="text-[#015440]" size={24} />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-1">{t("info.hours")}</h3>

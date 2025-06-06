@@ -16,6 +16,15 @@
         "subtitle": "Our culinary experts craft every dish with passion"
       }
     },
+    "Navigation": {
+      "home": "Home",
+      "menu": "Menu",
+      "about": "About",
+      "gallery": "Gallery",
+      "contact": "Contact",
+      "orderOnline": "Order Online",
+      "reservation": "Reservation"
+    },
     "viewMenu": "View Our Menu",
     "bookTable": "Book a Table",
     "about": {
@@ -71,15 +80,6 @@
     }
 
   }, 
-  "Navigation": {
-    "home": "Home",
-    "menu": "Menu",
-    "about": "About",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "orderOnline": "Order Online",
-    "reservation": "Reservation"
-  },
   "About": {
     "title": "About Us",
     "subtitle": "Our journey, our passion, and our commitment to culinary excellence",
@@ -248,4 +248,5 @@
           "description": "Malibu, votka, ananas suyu, nar şurubu"
         }
   }
+
 }

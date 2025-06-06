@@ -13,7 +13,7 @@ const slides = [
     id: 1,
     title: "Authentic Cuisine",
     subtitle: "Experience the true flavors of traditional cooking",
-    image: "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685464361.jpg",
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ export default function HeroSection() {
         >
           <div className="absolute inset-0 bg-black/50 z-10" />
           <Image
-            src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="https://golabrestaurant.com/wp-content/uploads/2023/11/EZ_00498-2-1.jpg"
             alt="Elegant Dining"
             fill
             className="object-cover"
@@ -65,14 +65,14 @@ export default function HeroSection() {
           <div
             className="max-w-2xl"
           >
-            <span className="inline-block text-restaurant-primary font-medium text-lg md:text-xl mb-4">
+            <span className="inline-block text-[#015440] font-medium text-lg md:text-xl mb-4">
               {t("welcome")}
             </span>
             <h1 className="text-white mb-6">
-            Authentic Cuisine
+            {t("heroSlides.slide1.title")}
             </h1>
             <p className="text-white/90 text-lg md:text-xl mb-8">
-              Experience the true flavors of traditional cooking
+              {t("heroSlides.slide1.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/menu" className="btn-primary">

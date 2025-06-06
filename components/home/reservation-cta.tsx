@@ -56,7 +56,7 @@ export default function ReservationCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-restaurant-primary font-medium mb-2 inline-block">
+            <span className="text-[#015440] font-medium mb-2 inline-block">
               {t('reservation.title')}
             </span>
             <h2 className="mb-6">{t('reservation.subtitle')}</h2>
@@ -66,19 +66,19 @@ export default function ReservationCTA() {
             <ul className="space-y-4">
               <li className="flex items-center">
                 <div className="bg-restaurant-primary/10 p-2 rounded-full mr-4">
-                  <Clock size={20} className="text-restaurant-primary" />
+                  <Clock size={20} className="text-[#015440]" />
                 </div>
                 <span>{t('reservation.features.hours')}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-restaurant-primary/10 p-2 rounded-full mr-4">
-                  <Users size={20} className="text-restaurant-primary" />
+                  <Users size={20} className="text-[#015440]" />
                 </div>
                 <span>{t('reservation.features.parties')}</span>
               </li>
               <li className="flex items-center">
                 <div className="bg-restaurant-primary/10 p-2 rounded-full mr-4">
-                  <Calendar size={20} className="text-restaurant-primary" />
+                  <Calendar size={20} className="text-[#015440]" />
                 </div>
                 <span>{t('reservation.features.events')}</span>
               </li>

@@ -17,6 +17,15 @@
             "subtitle": "Şeflerimiz her yemeği tutkuyla hazırlıyor"
           }
         },
+        "navigation": {
+          "home": "Ana Sayfa",
+          "menu": "Menü",
+          "about": "Hakkımızda",
+          "gallery": "Galeri",
+          "contact": "İletişim",
+          "orderOnline": "Online Sipariş",
+          "reservation": "Rezervasyon"
+        },
         "viewMenu": "Menüyü Görüntüle",
         "bookTable": "Masa Rezervasyonu",
         "about": {
@@ -68,15 +77,6 @@
           }
         }
       },
-    "Navigation": {
-      "home": "Ana Sayfa",
-      "menu": "Menü",
-      "about": "Hakkımızda",
-      "gallery": "Galeri",
-      "contact": "İletişim",
-      "orderOnline": "Online Sipariş",
-      "reservation": "Rezervasyon"
-    },
     "About": {
       "title": "Hakkımızda",
       "subtitle": "Yolculuğumuz, tutkumuz ve mutfak mükemmelliğine olan bağlılığımız",

@@ -36,7 +36,7 @@ export default function FeaturedMenu() {
     <section className="section bg-white">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <span className="text-restaurant-primary font-medium mb-2 inline-block">
+          <span className="text-[#015440] font-medium mb-2 inline-block">
             {t('featuredMenu.title')}
           </span>
           <h2 className="mb-4">{t('featuredMenu.subtitle')}</h2>

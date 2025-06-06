@@ -39,7 +39,7 @@ export default async function RootLayout({
   return (
     <html  lang={locale} className={`${inter.variable} ${playfair.variable}`}>
       <body className={inter.className}>
-      <NextIntlClientProvider >
+      <NextIntlClientProvider messages={messages} locale={locale}>
         {children}
       </NextIntlClientProvider>
       </body>

@@ -24,7 +24,7 @@ export default function AboutSection() {
           >
             <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg">
               <Image
-                src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://golabrestaurant.com/wp-content/uploads/2023/10/Untitled-design-2-2.jpg"
                 alt="GoLab Restaurant Interior"
                 fill
                 className="object-cover"
@@ -39,7 +39,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="text-restaurant-primary font-medium mb-2 inline-block">
+            <span className="text-[#015440] font-medium mb-2 inline-block">
               {t('about.title')}
             </span>
             <h2 className="mb-6">{t('about.subtitle')}</h2>

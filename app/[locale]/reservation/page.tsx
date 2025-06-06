@@ -242,7 +242,7 @@ export default function ReservationPage() {
                             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
                               <option key={num} value={num}>{num} {num === 1 ? 'Guest' : 'Guests'}</option>
                             ))}
-                            <option value="11">More than 10 (We'll contact you)</option>
+                            <option value="11">More than 10 (We&apos;ll contact you)</option>
                           </select>
                         </div>
                       </div>

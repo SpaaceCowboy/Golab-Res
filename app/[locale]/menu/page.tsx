@@ -43,7 +43,7 @@ export default function MenuPage() {
       <section className="section bg-restaurant-light">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <span className="text-restaurant-primary font-medium mb-2 inline-block">
+            <span className="text-[#015440] font-medium mb-2 inline-block">
             {t("selection")}
             </span>
             <h2>{t("categories")}</h2>
@@ -66,7 +66,7 @@ export default function MenuPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h3 className="text-white text-xl font-semibold mb-2">{category.name}</h3>
-                    <p className="text-white/80 text-sm line-clamp-2">{category.description}</p>
+                    
                   </div>
                 </div>
               </Link>

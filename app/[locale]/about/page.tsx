@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-restaurant-primary font-medium mb-2 inline-block">
+              <span className="text-[#015440] font-medium mb-2 inline-block">
               {t("story.title")}
               </span>
               <h2 className="mb-6">{t("story.subtitle")}</h2>
@@ -82,7 +82,7 @@ export default function AboutPage() {
       <section className="section bg-restaurant-light">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <span className="text-restaurant-primary font-medium mb-2 inline-block">
+            <span className="text-[#015440] font-medium mb-2 inline-block">
             {t("values.title")}
             </span>
             <h2 className="mb-4">{t("values.subtitle")}</h2>

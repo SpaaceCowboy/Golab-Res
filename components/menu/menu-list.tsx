@@ -131,7 +131,7 @@ export default function MenuList() {
                   <motion.div 
                     key={menuItem.id}
                     variants={item}
-                    className="flex bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+                    className="flex h-[17vh] bg-white border border-gray-100 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
                   >
                     <div className="w-1/3 relative">
                       <Image

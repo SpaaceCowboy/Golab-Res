@@ -67,7 +67,7 @@ export default function GalleryPage() {
             <button
               className={`px-4 py-2 rounded-full transition-colors duration-300 ${
                 selectedCategory === null
-                  ? "bg-restaurant-primary text-white"
+                  ? "bg-[#015440] text-white"
                   : "bg-white text-restaurant-dark hover:bg-gray-100"
               }`}
               onClick={() => setSelectedCategory(null)}

@@ -39,9 +39,9 @@ export default function Header() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 text-restaurant-primary" ,
+        "fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 text-white" ,
         scrolled
-          ? "bg-white shadow-md py-3 dark:bg-restaurant-dark"
+          ? "bg-white shadow-md py-3 dark:bg-restaurant-dark text-[#015440]"
           : "bg-transparent"
       )}
     >
