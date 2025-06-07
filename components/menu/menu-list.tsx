@@ -63,7 +63,6 @@ export default function MenuList() {
             
             {filteredItems.length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-lg text-gray-500">{t("noResults")} "{searchTerm}"</p>
                 <button 
                   onClick={() => setSearchTerm("")}
                   className="mt-4 text-restaurant-primary font-medium hover:underline"

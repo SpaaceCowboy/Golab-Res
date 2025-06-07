@@ -1,7 +1,12 @@
-import { MenuItem, Category, Testimonial, Staff, Location, Gallery } from '@/types';
+import { MenuItem, Category, Testimonial, Staff, Location, Gallery, Breakfast,
+  Appetizers, Maincourse, Salads, Milkshakeandsmoothies, Alchoholbottles, Beer, Champagne, Softdrinks,
+  Coffeeandtea, Desserts, Pasta, Burgers, Pizzaa, Cocktails, Iraniandishes, Wine
+
+ } from '@/types';
 import { Pizza } from 'lucide-react';
 
-export const menuItems: MenuItem[] = [
+
+export const breakfast: Breakfast[] = [
   {
     id: 2,
     name: 'Turkish Breakfast For Two Person',
@@ -111,253 +116,265 @@ export const menuItems: MenuItem[] = [
     category: 'Breakfast',
     featured: false,
   },
-  // Appetizers
-  {
-    id: 16,
-    name: 'LENTIL SOUP',
-    description: 'Lentil soup, Lemon, Kruton',
-    price: '₺190',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MERCIMEK-CORBASI.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 17,
-    name: '10 SIGNATURE MEZES',
-    description: "Chef's suggestion",
-    price: '₺1550',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/10LU.jpeg',
-    category: 'Appetizers',
-    featured: true,
-  },
-  {
-    id: 18,
-    name: "Golab Chef's Mezzes",
-    description: "Chef's suggestion",
-    price: '₺950',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/GOLAB-SEFIN-MEZELERI.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 19,
-    name: 'STUFFED MUSSELS',
-    description: 'Seafood rice, edible mussel shell chips, lime',
-    price: '₺500',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/midye-dolma-1.jpeg',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 20,
-    name: 'HUMMUS WITH PASTRAMI',
-    description: 'Crispy pastrami, crispy chickpeas, hummus, red oil',
-    price: '₺500',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/humus-1.jpeg',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 21,
-    name: 'AEGEAN HERB SAUTE',
-    description: 'Aegean herbs, caramelized onion, strained yogurt, sliced almonds, red oil',
-    price: '₺450',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/EGG-OT-1.jpeg',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 22,
-    name: 'SHRIMP IN BUTTER ',
-    description: 'Shrimp, red bell pepper, village pepper, mushrooms, spring onion, sesame, butter',
-    price: '₺650',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/KARIDES-1.jpeg',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 23,
-    name: 'MEDETERRANEAN DELIGHT',
-    description: 'Mediterranean fish balls, sweet chili, green oil, soybean sprouts',
-    price: '₺600',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/LOKUM-1.jpeg',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 24,
-    name: 'APPETIZER PLATE',
-    description: 'Appetizer Plate',
-    price: '₺700',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MEZE-TABAGI.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 25,
-    name: 'Beer Plate',
-    description: 'Beer Plate',
-    price: '580',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MERCIMEK-CORBASI.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 26,
-    name: 'Golab Cheese Plate',
-    description: 'Golab Cheese Plate',
-    price: '1100',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/Golab-Peynir-Tabagi.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 27,
-    name: 'pacanga BALLS',
-    description: 'Fried paçanga balls with bacon and mozzarella, Sweet chili sauce',
-    price: '₺650',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/PACANGA-TOPLARI.webp',
-    category: 'Appetizers',
-    featured: true,
-  },
-  {
-    id: 28,
-    name: 'HUMUS',
-    description: 'Chickpea chips, Tomato, Arugula, Pickled onion, Pepper oil',
-    price: '₺300',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/HUMUS.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 29,
-    name: 'KASHKE BADEMJAN',
-    description: 'Fried eggplant, Fried onion, Kashk cheese, Mint oil',
-    price: '₺300',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/KASHKE-BADEMJAN.webp',
-    category: 'Appetizers',
-    featured: true,
-  },
-  {
-    id: 30,
-    name: ' French Fries',
-    description: 'Fries Potato',
-    price: '₺250',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/PATATES-KIZARTMASI.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 31,
-    name: 'MIRZA GHASSEMİ',
-    description: 'Roasted eggplant, Garlic, Grilled Tomato, Egg, Quail egg',
-    price: '₺270',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MIRZA-GHASSEMI.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 32,
-    name: 'ZEYTIN PARVARDE',
-    description: 'Green olives, garlic, walnut, pomegranate',
-    price: '₺350',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685781795-e1727424189584.jpeg',
-    category: 'Appetizers',
-    featured: false,
-  },
-  {
-    id: 33,
-    name: 'Yogurt',
-    description: 'Types of Yogurt:Yogurt and cucumber, Garlic Yogurt, Eggplant Yogurt',
-    price: '₺130',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/Yogurt-Cesitleri.webp',
-    category: 'Appetizers',
-    featured: false,
-  },
-  // Salads
-  {
-    id: 34,
-    name: 'CHICKEN CAESAR SALAD',
-    description: 'Grilled Chicken, Lettuce, Kruton, Caesar Sauce',
-    price: '₺550',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1678501504-e1727430221713.jpg',
-    category: 'Salads',
-    featured: false,
-  },
-  {
-    id: 35,
-    name: 'GREEN SALAD',
-    description: 'Arugula, Green Apple and Crunchy Walnuts, Rice Vinegar, Pomegranate, Orange and Cucumber',
-    price: '₺550',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1678501800-e1727429681394.jpg',
-    category: 'Salads',
-    featured: false,
-  },
-  {
-    id: 36,
-    name: 'SHIRAZI SALAD',
-    description: 'Cucumber, Tomato, Onion, Lemon juice',
-    price: '₺170',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685783228.jpg',
-    category: 'Salads',
-    featured: false,
-  },
-  {
-    id: 37,
-    name: 'TULUM CHEESE SHEPHERD SALAD',
-    description: 'Colorful Tomatoes, Cucumber, Green pepper, California pepper, Red pepper, Purple Onion, Basil, Lemon vinepret',
-    price: '₺490',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1678501981-e1727429631208.jpg',
-    category: 'Salads',
-    featured: false,
-  },
-  // Main Course
-  {
-    id: 38,
-    name: 'SALMON',
-    description: 'Pea puree, avocado, purslane, fennel, strawberry, capers, blackcurrant, green oil, lemon saffron sauce, plum',
-    price: '₺950',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/SOMON.jpeg',
-    category: 'Main Course',
-    featured: false,
-  },
-  {
-    id: 39,
-    name: 'CAFÉ DE PARIS ENTRECOTE WITH SAUCE',
-    description: 'Café de Paris sauce, oven-baked tomatoes, baby potatoes, fresh thyme (Beef entrecôte)',
-    price: '₺950',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/cafede.jpeg',
-    category: 'Main Course',
-    featured: false,
-  },
-  {
-    id: 40,
-    name: 'KUZU LOKUM',
-    description: 'Plum, caramelized tomatoes, baby potatoes, purslane salad, demi-glace sauce',
-    price: '₺1100',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/Lokum-main.jpeg',
-    category: 'Main Course',
-    featured: false,
-  },
-  {
-    id: 41,
-    name: 'SEA BASS',
-    description: 'Fondant potato, fennel, purslane, lime, chimichurri sauce, baby radish, green oil',
-    price: '₺850',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/LEVREK-1.jpg',
-    category: 'Main Course',
-    featured: true,
-  },
-  {
-    id: 42,
-    name: 'CHICKEN TANDORI',
-    description: 'Marinated chicken breast, Basmati Rice, Tomato Coriander Salad, Lavash, Grilled Lemon',
-    price: '₺550',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/86de7f_2f82f8ba84ca437ebd80a376c2d31987mv2-e1727431414691.jpg',
-    category: 'Main Course',
-    featured: true,
-  },
-  // Iranian Dishes
+]
+export const appetizers: Appetizers[] = [
+ // Appetizers
+ {
+  id: 16,
+  name: 'LENTIL SOUP',
+  description: 'Lentil soup, Lemon, Kruton',
+  price: '₺190',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MERCIMEK-CORBASI.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 17,
+  name: '10 SIGNATURE MEZES',
+  description: "Chef's suggestion",
+  price: '₺1550',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/10LU.jpeg',
+  category: 'Appetizers',
+  featured: true,
+},
+{
+  id: 18,
+  name: "Golab Chef's Mezzes",
+  description: "Chef's suggestion",
+  price: '₺950',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/GOLAB-SEFIN-MEZELERI.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 19,
+  name: 'STUFFED MUSSELS',
+  description: 'Seafood rice, edible mussel shell chips, lime',
+  price: '₺500',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/midye-dolma-1.jpeg',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 20,
+  name: 'HUMMUS WITH PASTRAMI',
+  description: 'Crispy pastrami, crispy chickpeas, hummus, red oil',
+  price: '₺500',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/humus-1.jpeg',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 21,
+  name: 'AEGEAN HERB SAUTE',
+  description: 'Aegean herbs, caramelized onion, strained yogurt, sliced almonds, red oil',
+  price: '₺450',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/EGG-OT-1.jpeg',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 22,
+  name: 'SHRIMP IN BUTTER ',
+  description: 'Shrimp, red bell pepper, village pepper, mushrooms, spring onion, sesame, butter',
+  price: '₺650',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/KARIDES-1.jpeg',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 23,
+  name: 'MEDETERRANEAN DELIGHT',
+  description: 'Mediterranean fish balls, sweet chili, green oil, soybean sprouts',
+  price: '₺600',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/LOKUM-1.jpeg',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 24,
+  name: 'APPETIZER PLATE',
+  description: 'Appetizer Plate',
+  price: '₺700',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MEZE-TABAGI.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 25,
+  name: 'Beer Plate',
+  description: 'Beer Plate',
+  price: '580',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MERCIMEK-CORBASI.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 26,
+  name: 'Golab Cheese Plate',
+  description: 'Golab Cheese Plate',
+  price: '1100',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/Golab-Peynir-Tabagi.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 27,
+  name: 'pacanga BALLS',
+  description: 'Fried paçanga balls with bacon and mozzarella, Sweet chili sauce',
+  price: '₺650',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/PACANGA-TOPLARI.webp',
+  category: 'Appetizers',
+  featured: true,
+},
+{
+  id: 28,
+  name: 'HUMUS',
+  description: 'Chickpea chips, Tomato, Arugula, Pickled onion, Pepper oil',
+  price: '₺300',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/HUMUS.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 29,
+  name: 'KASHKE BADEMJAN',
+  description: 'Fried eggplant, Fried onion, Kashk cheese, Mint oil',
+  price: '₺300',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/KASHKE-BADEMJAN.webp',
+  category: 'Appetizers',
+  featured: true,
+},
+{
+  id: 30,
+  name: ' French Fries',
+  description: 'Fries Potato',
+  price: '₺250',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/PATATES-KIZARTMASI.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 31,
+  name: 'MIRZA GHASSEMİ',
+  description: 'Roasted eggplant, Garlic, Grilled Tomato, Egg, Quail egg',
+  price: '₺270',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/MIRZA-GHASSEMI.webp',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 32,
+  name: 'ZEYTIN PARVARDE',
+  description: 'Green olives, garlic, walnut, pomegranate',
+  price: '₺350',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685781795-e1727424189584.jpeg',
+  category: 'Appetizers',
+  featured: false,
+},
+{
+  id: 33,
+  name: 'Yogurt',
+  description: 'Types of Yogurt:Yogurt and cucumber, Garlic Yogurt, Eggplant Yogurt',
+  price: '₺130',
+  image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/Yogurt-Cesitleri.webp',
+  category: 'Appetizers',
+  featured: false,
+},  
+]
+
+export const maincourse: Maincourse[] = [
+  
+    {
+      id: 38,
+      name: 'SALMON',
+      description: 'Pea puree, avocado, purslane, fennel, strawberry, capers, blackcurrant, green oil, lemon saffron sauce, plum',
+      price: '₺950',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/SOMON.jpeg',
+      category: 'Main Course',
+      featured: false,
+    },
+    {
+      id: 39,
+      name: 'CAFÉ DE PARIS ENTRECOTE WITH SAUCE',
+      description: 'Café de Paris sauce, oven-baked tomatoes, baby potatoes, fresh thyme (Beef entrecôte)',
+      price: '₺950',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/cafede.jpeg',
+      category: 'Main Course',
+      featured: false,
+    },
+    {
+      id: 40,
+      name: 'KUZU LOKUM',
+      description: 'Plum, caramelized tomatoes, baby potatoes, purslane salad, demi-glace sauce',
+      price: '₺1100',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/Lokum-main.jpeg',
+      category: 'Main Course',
+      featured: false,
+    },
+    {
+      id: 41,
+      name: 'SEA BASS',
+      description: 'Fondant potato, fennel, purslane, lime, chimichurri sauce, baby radish, green oil',
+      price: '₺850',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/LEVREK-1.jpg',
+      category: 'Main Course',
+      featured: true,
+    },
+    {
+      id: 42,
+      name: 'CHICKEN TANDORI',
+      description: 'Marinated chicken breast, Basmati Rice, Tomato Coriander Salad, Lavash, Grilled Lemon',
+      price: '₺550',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/86de7f_2f82f8ba84ca437ebd80a376c2d31987mv2-e1727431414691.jpg',
+      category: 'Main Course',
+      featured: true,
+    },
+  
+]
+
+export const salads: Salads[] = [
+  
+    {
+      id: 34,
+      name: 'CHICKEN CAESAR SALAD',
+      description: 'Grilled Chicken, Lettuce, Kruton, Caesar Sauce',
+      price: '₺550',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1678501504-e1727430221713.jpg',
+      category: 'Salads',
+      featured: false,
+    },
+    {
+      id: 35,
+      name: 'GREEN SALAD',
+      description: 'Arugula, Green Apple and Crunchy Walnuts, Rice Vinegar, Pomegranate, Orange and Cucumber',
+      price: '₺550',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1678501800-e1727429681394.jpg',
+      category: 'Salads',
+      featured: false,
+    },
+    {
+      id: 36,
+      name: 'SHIRAZI SALAD',
+      description: 'Cucumber, Tomato, Onion, Lemon juice',
+      price: '₺170',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685783228.jpg',
+      category: 'Salads',
+      featured: false,
+    },
+    {
+      id: 37,
+      name: 'TULUM CHEESE SHEPHERD SALAD',
+      description: 'Colorful Tomatoes, Cucumber, Green pepper, California pepper, Red pepper, Purple Onion, Basil, Lemon vinepret',
+      price: '₺490',
+      image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1678501981-e1727429631208.jpg',
+      category: 'Salads',
+      featured: false,
+    },
+  
+]
+
+export const iraniandishes: Iraniandishes[] = [
   {
     id: 43,
     name: 'SINI MAKHSOOS',
@@ -493,7 +510,9 @@ export const menuItems: MenuItem[] = [
     category: 'Iranian Dishes',
     featured: false,
   },
-  // Pizza
+]
+
+export const pizza: Pizzaa[] = [
   {
     id: 58,
     name: 'MIX PIZZA',
@@ -521,7 +540,9 @@ export const menuItems: MenuItem[] = [
     category: 'Pizza',
     featured: false,
   },
-  // Burger
+]
+
+export const burger: Burgers[] = [
   {
     id: 61,
     name: 'GOLAB BURGER',
@@ -549,7 +570,9 @@ export const menuItems: MenuItem[] = [
     category: 'Burgers',
     featured: false,
   },
-  // Pasta
+]
+
+export const pasta: Pasta[]= [
   {
     id: 64,
     name: 'Pesto Fettuccine with Chicken',
@@ -568,7 +591,9 @@ export const menuItems: MenuItem[] = [
     category: 'Pasta',
     featured: false,
   },
-  // Deserts
+]
+
+export const desserts: Desserts[] = [
   {
     id: 66,
     name: 'FRUIT PLATE',
@@ -632,7 +657,9 @@ export const menuItems: MenuItem[] = [
     category: 'Deserts',
     featured: false,
   },
-  // Cocktails
+]
+
+export const cocktails: Cocktails[] = [
   {
     id: 73,
     name: 'LONG ISLAND',
@@ -768,7 +795,9 @@ export const menuItems: MenuItem[] = [
     category: 'Cocktails',
     featured: false,
   },
-  // Soft Drinks
+]
+
+export const softdrinks: Softdrinks[] = [
   {
     id: 78,
     name: 'Khakeshir',
@@ -967,7 +996,9 @@ export const menuItems: MenuItem[] = [
     category: 'Soft Drinks',
     featured: false,
   },
-  // Milkshake & Smoothies
+]
+
+export const milkshakeandsmoothies: Milkshakeandsmoothies[] = [
   {
     id: 100,
     name: 'Triple B Smoothie',
@@ -1015,7 +1046,9 @@ export const menuItems: MenuItem[] = [
     category: 'Milkshake & Smoothies',
     featured: false,
   },
-  //Coffee and Tea
+]
+
+export const coffeeandtea: Coffeeandtea[] = [
   {
     id: 105,
     name: 'ESPRESSO',
@@ -1232,7 +1265,8 @@ export const menuItems: MenuItem[] = [
     category: 'Coffee and Tea',
     featured: false,
   },
-  // BEER
+]
+export const beer: Beer[] = [
   {
     id: 128,
     name: 'AMESTERDAM',
@@ -1314,7 +1348,8 @@ export const menuItems: MenuItem[] = [
     category: 'Beer',
     featured: false,
   },
-  // Alchohol Bottles
+]
+export const alchoholbottles: Alchoholbottles[] = [
   {
     id: 137,
     name: 'BLUE LABEL',
@@ -1487,7 +1522,8 @@ export const menuItems: MenuItem[] = [
     featured: false,
   },
 
-  //Champagne
+]
+export const champagne: Champagne[] = [
   {
     id: 157,
     name: 'Moet&chandon ice rose',
@@ -1542,6 +1578,9 @@ export const menuItems: MenuItem[] = [
     category: 'Champagne',
     featured: false,
   },
+]
+
+export const wine: Wine[] = [
   {
     id: 163,
     name: 'SARAFIN SHIRAZ ',
@@ -1551,8 +1590,9 @@ export const menuItems: MenuItem[] = [
     category: 'Wine',
     featured: false,
   },
+]
+export const menuItems: MenuItem[] = [
 
-  
 ];
 
 export const categories: Category[] = [
@@ -1560,104 +1600,121 @@ export const categories: Category[] = [
     id: 1,
     name: 'Breakfast',
     description: "Start your day with our delicious breakfast options.",
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/11/Copy-of-DSC09992-1.jpg',
+    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    link: "http://localhost:3000/en/breakfast"
   },
   {
     id: 2,
     name: 'Appetizers',
     description: 'Start your meal with our delicious bite-sized starters.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09513-3.jpg',
+    link: "http://localhost:3000/en/appetizers"
   },
   {
     id: 3,
     name: 'Main Course',
     description: 'Authentic dishes prepared with traditional recipes and fresh ingredients.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09691-2-1-1.jpg',
+    link: 'http://localhost:3000/en/maincourse'
   },
   {
     id: 4,
     name: 'Iranian Dishes',
     description: 'Aromatic rice dishes cooked to perfection with herbs and spices.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/DSC00410-1.jpg',
+    link: 'http://localhost:3000/en/iraniandishes'
   },
   {
     id: 12,
     name: 'Cocktails',
     description: 'Refreshing alcoholic drinks to accompany your meal.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/DSC00487-scaled.jpg',
+    link: 'http://localhost:3000/en/cocktails'
   },
   {
     id: 6,
     name: 'Pizza',
     description: 'Delicious pizza to satisfy your cravings.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2024/10/Kaburga-PIZZA-Roast-Beaf-Pizza.webp',
+    link: 'http://localhost:3000/en/pizza'
   },
   {
     id: 7,
     name: 'Burgers',
     description: 'Juicy burgers to satisfy your cravings.',
     image: 'https://vulpine-422382743.imgix.net/IMG_2876.JPG',
+    link: 'http://localhost:3000/en/burgers'
   },
   {
     id: 8,
     name: 'Pasta',
     description: 'Creamy pasta to satisfy your cravings.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2024/01/IMG_2115-1.jpg',
+    link: 'http://localhost:3000/en/pasta'
   },
   {
     id: 9,
     name: 'Desserts',
     description: 'Sweet treats to end your meal on a delightful note.',
     image: 'https://vulpine-422382743.imgix.net/IMG_2868.JPG',
+    link: 'http://localhost:3000/en/desserts'
   },
   {
     id: 10,
     name: 'Coffee and Tea',
     description: 'Refreshing coffee and tea to accompany your meal.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1677971552_edited.jpg',
+    link: 'http://localhost:3000/en/coffeeandtea'
   },
   {
     id: 11,
     name: "Soft Drinks",
     description: 'Refreshing soft drinks to accompany your meal.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_f00136be7cfb4215a04823264-e1727375968566.jpg',
+    link: 'http://localhost:3000/en/softdrinks'
   },
   {
     id: 5,
     name: 'Salads',
     description: 'Fresh and healthy salads to accompany your meal.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685783427.jpg',
+    link: 'http://localhost:3000/en/salads'
   },
   {
     id: 13,
     name: 'Milkshake & Smoothies',
     description: 'Refreshing milkshake and smoothies to accompany your meal.',
     image: 'https://golabrestaurant.com/wp-content/uploads/2025/05/5828033156681419764.jpg',
+    link: 'http://localhost:3000/en/milkshakeandsmoothies'
   },
   {
     id:14,
     name: "Alchohol Bottles",
     description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2024/01/EZ_00862-1-1-e1706165013687.jpg"
+    image: "https://golabrestaurant.com/wp-content/uploads/2024/01/EZ_00862-1-1-e1706165013687.jpg",
+    link: 'alchoholbottles'
   },
   {
     id:15,
     name: "Beer",
     description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/IMG_2529-scaled.jpg"
+    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/IMG_2529-scaled.jpg",
+    link: 'http://localhost:3000/en/beer'
   },
   // champagne
   {
     id:16,
     name: "Champagne",
     description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_b2f059e2f4024aa8b2a6c8493.jpg" 
+    image: "https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_b2f059e2f4024aa8b2a6c8493.jpg",
+    link: 'champagne'
    },
    {
     id:17,
     name: "Wine",
     description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/CASTELLANI.jpg"
+    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/CASTELLANI.jpg",
+    link: 'whine'
    }
   
 
