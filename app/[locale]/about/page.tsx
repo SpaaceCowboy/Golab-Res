@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { staff } from "@/lib/data";
 import { useTranslations } from "next-intl";
 
 export const metadata = {
