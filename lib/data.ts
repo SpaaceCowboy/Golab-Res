@@ -1,13 +1,161 @@
 import { MenuItem, Category, Testimonial, Staff, Location, Gallery, Breakfast,
   Appetizers, Maincourse, Salads, Milkshakeandsmoothies, Alchoholbottles, Beer, Champagne, Softdrinks,
-  Coffeeandtea, Desserts, Pasta, Burgers, Pizzaa, Cocktails, Iraniandishes, Wine
+  Coffeeandtea, Desserts, Pasta, Burgers, Pizzaa, Cocktails, Iraniandishes, Wine, Subcategory
 
  } from '@/types';
 import { Pizza } from 'lucide-react';
 
+export const subcategory: Subcategory[] = [
+  {
+    id: 1,
+    name: 'Food',
+    image: '',
+    link: 'menu/food'
+  },
+  {
+    id: 2,
+    name: 'Alchoholic Drinks',
+    image: '',
+    link: 'menu/alcoholic-drink-menu'
+  },
+  {
+    id: 3,
+    name: 'Non Alchoholic Drinks',
+    image: '',
+    link: 'menu/Non-alcoholic-menu'
+  }
+]
+
+
+export const categories: Category[] = [
+  
+  {
+    id: 1,
+    name: 'Breakfast',
+    description: "Start your day with our delicious breakfast options.",
+    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    link: "food/breakfast"
+  },
+  {
+    id: 2,
+    name: 'Appetizers',
+    description: 'Start your meal with our delicious bite-sized starters.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09513-3.jpg',
+    link: "food/appetizers"
+  },
+  {
+    id: 3,
+    name: 'Main Course',
+    description: 'Authentic dishes prepared with traditional recipes and fresh ingredients.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09691-2-1-1.jpg',
+    link: 'food/maincourse'
+  },
+  {
+    id: 4,
+    name: 'Iranian Dishes',
+    description: 'Aromatic rice dishes cooked to perfection with herbs and spices.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/DSC00410-1.jpg',
+    link: 'food/iraniandishes'
+  },
+  {
+    id: 5,
+    name: 'Salads',
+    description: 'Fresh and healthy salads to accompany your meal.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685783427.jpg',
+    link: 'food/salads'
+  },
+  {
+    id: 6,
+    name: 'Pizza',
+    description: 'Delicious pizza to satisfy your cravings.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/10/Kaburga-PIZZA-Roast-Beaf-Pizza.webp',
+    link: 'food/pizza'
+  },
+  {
+    id: 7,
+    name: 'Burgers',
+    description: 'Juicy burgers to satisfy your cravings.',
+    image: 'https://vulpine-422382743.imgix.net/IMG_2876.JPG',
+    link: 'food/burgers'
+  },
+  {
+    id: 8,
+    name: 'Pasta',
+    description: 'Creamy pasta to satisfy your cravings.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/01/IMG_2115-1.jpg',
+    link: 'food/pasta'
+  },
+  {
+    id: 9,
+    name: 'Desserts',
+    description: 'Sweet treats to end your meal on a delightful note.',
+    image: 'https://vulpine-422382743.imgix.net/IMG_2868.JPG',
+    link: 'food/desserts'
+  },
+  {
+    id: 12,
+    name: 'Cocktails',
+    description: 'Refreshing alcoholic drinks to accompany your meal.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/DSC00487-scaled.jpg',
+    link: 'alcoholic-drink-menu/cocktails'
+  },
+  {
+    id:14,
+    name: "Alchohol Bottles",
+    description: "",
+    image: "https://golabrestaurant.com/wp-content/uploads/2024/01/EZ_00862-1-1-e1706165013687.jpg",
+    link: 'alcoholic-drink-menu/alchoholbottles'
+  },
+  {
+    id:15,
+    name: "Beer",
+    description: "",
+    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/IMG_2529-scaled.jpg",
+    link: 'alcoholic-drink-menu/beer'
+  },
+  {
+    id:16,
+    name: "Champagne",
+    description: "",
+    image: "https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_b2f059e2f4024aa8b2a6c8493.jpg",
+    link: 'alcoholic-drink-menu/champagne'
+   },
+   {
+    id:17,
+    name: "Wine",
+    description: "",
+    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/CASTELLANI.jpg",
+    link: 'alcoholic-drink-menu/wine'
+   },
+   {
+    id: 10,
+    name: 'Coffee and Tea',
+    description: 'Refreshing coffee and tea to accompany your meal.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1677971552_edited.jpg',
+    link: 'Non-alcoholic-menu/coffeeandtea'
+  },
+  {
+    id: 11,
+    name: "Soft Drinks",
+    description: 'Refreshing soft drinks to accompany your meal.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_f00136be7cfb4215a04823264-e1727375968566.jpg',
+    link: 'Non-alcoholic-menu/softdrinks'
+  },
+  {
+    id: 13,
+    name: 'Milkshake & Smoothies',
+    description: 'Refreshing milkshake and smoothies to accompany your meal.',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2025/05/5828033156681419764.jpg',
+    link: 'Non-alcoholic-menu/milkshakeandsmoothies'
+  },
+  
+
+
+];
 
 export const breakfast: Breakfast[] = [
   {
+    
     id: 2,
     name: 'Turkish Breakfast For Two Person',
     description: "ss",
@@ -1592,147 +1740,110 @@ export const wine: Wine[] = [
   },
 ]
 export const menuItems: MenuItem[] = [
-
-];
-
-export const categories: Category[] = [
-  {
-    id: 1,
-    name: 'Breakfast',
-    description: "Start your day with our delicious breakfast options.",
-    image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    link: "/breakfast"
-  },
   {
     id: 2,
-    name: 'Appetizers',
-    description: 'Start your meal with our delicious bite-sized starters.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09513-3.jpg',
-    link: "/appetizers"
+    name: 'Turkish Breakfast For Two Person',
+    description: "ss",
+    price: '₺1250',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/IKI-KISILIK-SERPME-KAHVALTI-.webp',
+    category: 'Breakfast',
+    featured: true,
   },
   {
     id: 3,
-    name: 'Main Course',
-    description: 'Authentic dishes prepared with traditional recipes and fresh ingredients.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/12/EZ_09691-2-1-1.jpg',
-    link: '/maincourse'
-  },
-  {
-    id: 4,
-    name: 'Iranian Dishes',
-    description: 'Aromatic rice dishes cooked to perfection with herbs and spices.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/DSC00410-1.jpg',
-    link: '/iraniandishes'
-  },
-  {
-    id: 12,
-    name: 'Cocktails',
-    description: 'Refreshing alcoholic drinks to accompany your meal.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/DSC00487-scaled.jpg',
-    link: '/cocktails'
-  },
-  {
-    id: 6,
-    name: 'Pizza',
-    description: 'Delicious pizza to satisfy your cravings.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/10/Kaburga-PIZZA-Roast-Beaf-Pizza.webp',
-    link: '/pizza'
-  },
-  {
-    id: 7,
-    name: 'Burgers',
-    description: 'Juicy burgers to satisfy your cravings.',
-    image: 'https://vulpine-422382743.imgix.net/IMG_2876.JPG',
-    link: '/burgers'
-  },
-  {
-    id: 8,
-    name: 'Pasta',
-    description: 'Creamy pasta to satisfy your cravings.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2024/01/IMG_2115-1.jpg',
-    link: '/pasta'
-  },
-  {
-    id: 9,
-    name: 'Desserts',
-    description: 'Sweet treats to end your meal on a delightful note.',
-    image: 'https://vulpine-422382743.imgix.net/IMG_2868.JPG',
-    link: '/desserts'
-  },
-  {
-    id: 10,
-    name: 'Coffee and Tea',
-    description: 'Refreshing coffee and tea to accompany your meal.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1677971552_edited.jpg',
-    link: '/coffeeandtea'
-  },
-  {
-    id: 11,
-    name: "Soft Drinks",
-    description: 'Refreshing soft drinks to accompany your meal.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_f00136be7cfb4215a04823264-e1727375968566.jpg',
-    link: '/softdrinks'
+    name: 'EGGS WITH GOLAB PARIS SAUCE',
+    description: 'Beef bacon on English muffins, 2 poached eggs, and hollandaise sauce served with chives baked side salad',
+    price: '₺480',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/GOLAB-PARIS-SOSLU-YUMURTA.webp',
+    category: 'Breakfast',
+    featured: true,
   },
   {
     id: 5,
-    name: 'Salads',
-    description: 'Fresh and healthy salads to accompany your meal.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1685783427.jpg',
-    link: '/salads'
+    name: 'AVOCADO POACHED EGGS',
+    description: 'Served with avocado toast, 2 poached eggs, chives, side salad',
+    price: '₺450',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/AVOKADO-POSE-YUMURTA.webp',
+    category: 'Breakfast',
+    featured: true,
   },
   {
-    id: 13,
-    name: 'Milkshake & Smoothies',
-    description: 'Refreshing milkshake and smoothies to accompany your meal.',
-    image: 'https://golabrestaurant.com/wp-content/uploads/2025/05/5828033156681419764.jpg',
-    link: '/milkshakeandsmoothies'
+    id: 17,
+    name: '10 SIGNATURE MEZES',
+    description: "Chef's suggestion",
+    price: '₺1550',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/10LU.jpeg',
+    category: 'Appetizers',
+    featured: true,
   },
   {
-    id:14,
-    name: "Alchohol Bottles",
-    description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2024/01/EZ_00862-1-1-e1706165013687.jpg",
-    link: '/alchoholbottles'
+    id: 27,
+    name: 'pacanga BALLS',
+    description: 'Fried paçanga balls with bacon and mozzarella, Sweet chili sauce',
+    price: '₺650',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/PACANGA-TOPLARI.webp',
+    category: 'Appetizers',
+    featured: true,
   },
-  {
-    id:15,
-    name: "Beer",
-    description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/IMG_2529-scaled.jpg",
-    link: '/beer'
-  },
-  // champagne
-  {
-    id:16,
-    name: "Champagne",
-    description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2023/10/76b600_b2f059e2f4024aa8b2a6c8493.jpg",
-    link: '/champagne'
-   },
-   {
-    id:17,
-    name: "Wine",
-    description: "",
-    image: "https://golabrestaurant.com/wp-content/uploads/2025/03/CASTELLANI.jpg",
-    link: '/whine'
-   }
-  
 
-
+  {
+    id: 29,
+    name: 'KASHKE BADEMJAN',
+    description: 'Fried eggplant, Fried onion, Kashk cheese, Mint oil',
+    price: '₺300',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/KASHKE-BADEMJAN.webp',
+    category: 'Appetizers',
+    featured: true,
+  },
+  {
+    id: 41,
+    name: 'SEA BASS',
+    description: 'Fondant potato, fennel, purslane, lime, chimichurri sauce, baby radish, green oil',
+    price: '₺850',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2025/04/LEVREK-1.jpg',
+    category: 'Main Course',
+    featured: true,
+  },
+  {
+    id: 42,
+    name: 'CHICKEN TANDORI',
+    description: 'Marinated chicken breast, Basmati Rice, Tomato Coriander Salad, Lavash, Grilled Lemon',
+    price: '₺550',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/86de7f_2f82f8ba84ca437ebd80a376c2d31987mv2-e1727431414691.jpg',
+    category: 'Main Course',
+    featured: true,
+  },
+  {
+    id: 43,
+    name: 'SINI MAKHSOOS',
+    description: 'Loghme kebab, a boneless barbecue chicken, a shishlik kebab, a muscle or neck plate',
+    price: '₺3890',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/DSC00410-1.jpg',
+    category: 'Iranian Dishes',
+    featured: true,
+  },
+  {
+    id: 44,
+    name: 'Golab Special',
+    description: 'Golab Special',
+    price: '₺1550',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2024/01/EZ_00189-2-e1727434073329.jpg',
+    category: 'Iranian Dishes',
+    featured: true,
+  },
+  {
+    id: 52,
+    name: 'GHORME SEBZİ',
+    description: 'A mixture of fresh meat, dense vegetables and red beans, Iranian Cuisine',
+    price: '₺510',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/10/img_1472_1674485403-1.jpg',
+    category: 'Iranian Dishes',
+    featured: true,
+  },
+ 
 ];
 
 
-
-export const staff: Staff[] = [
-  {
-    id: 1,
-    name: 'Raj Patel',
-    role: 'Head Chef',
-    bio: 'With over 20 years of experience in authentic cuisine, Chef Raj brings traditional recipes with a modern twist to GoLab Restaurant.',
-    image: 'https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  },
-
-];
 
 export const location: Location = {
   address: '123 Cuisine Street',

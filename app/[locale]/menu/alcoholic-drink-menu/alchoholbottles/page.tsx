@@ -6,14 +6,14 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
-import { softdrinks } from "@/lib/data";
+import { alchoholbottles } from "@/lib/data";
 import {useTranslations} from 'next-intl';
 
-export default function Breakfast() {
+export default function Alchoholbottles() {
   const t =  useTranslations("Menu");
   ["margarita", "mojito", "espressoMartini", "bikiniMartini"]
   const [searchTerm, setSearchTerm] = useState("");
-  const categories = Array.from(new Set(softdrinks.map(item => item.category)));
+  const categories = Array.from(new Set(alchoholbottles.map(item => item.category)));
   
 
     
@@ -41,7 +41,7 @@ export default function Breakfast() {
       <div className="container-custom">
 
         {!searchTerm && categories.map((category) => {
-          const categoryItems = softdrinks.filter(item => item.category === category);
+          const categoryItems = alchoholbottles.filter(item => item.category === category);
           
           return (
             <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24">

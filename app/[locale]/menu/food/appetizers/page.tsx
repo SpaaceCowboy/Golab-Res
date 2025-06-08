@@ -9,7 +9,7 @@ import { Search } from "lucide-react";
 import { appetizers } from "@/lib/data";
 import {useTranslations} from 'next-intl';
 
-export default function Breakfast() {
+export default function Appetizers() {
   const t =  useTranslations("Menu");
   ["margarita", "mojito", "espressoMartini", "bikiniMartini"]
   const [searchTerm, setSearchTerm] = useState("");

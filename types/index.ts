@@ -171,6 +171,12 @@ export interface Category {
   image: string;
   link: string;
 }
+export interface Subcategory {
+  id: number;
+  name: string;
+  image: string;
+  link: string;
+}
 
 export interface Testimonial {
   id: number;

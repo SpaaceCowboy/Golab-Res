@@ -5,14 +5,14 @@ import Image from "next/image";
 import {Link} from '@/i18n/navigation';
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { categories, menuItems } from "@/lib/data";
+import { categories, menuItems, } from "@/lib/data";
 import {useTranslations} from 'next-intl';
 
 export default function FeaturedMenu() {
   const t =  useTranslations("HomePage");
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const featuredItems = menuItems.filter(item => item.featured);
-  
+
   const filteredItems = activeCategory === "All" 
     ? featuredItems 
     : featuredItems.filter(item => item.category === activeCategory);
@@ -97,27 +97,11 @@ export default function FeaturedMenu() {
               <div className="p-6">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl">{item.name}</h3>
-                  {item.spicyLevel && item.spicyLevel > 0 && (
-                    <div className="flex">
-                      {[...Array(item.spicyLevel)].map((_, i) => (
-                        <span key={i} className="text-restaurant-accent">🌶️</span>
-                      ))}
-                    </div>
-                  )}
                 </div>
                 <p className="text-sm text-restaurant-dark/70 mb-4 line-clamp-2">
                   {item.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {item.dietaryInfo && item.dietaryInfo.map((info, index) => (
-                    <span 
-                      key={index} 
-                      className="bg-restaurant-cream text-restaurant-dark/80 text-xs px-2 py-1 rounded"
-                    >
-                      {info}
-                    </span>
-                  ))}
-                </div>
+
               </div>
             </motion.div>
           ))}

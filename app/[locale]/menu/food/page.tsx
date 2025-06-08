@@ -2,8 +2,8 @@ import Image from "next/image";
 import {Link} from '@/i18n/navigation';
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import MenuList from "@/components/menu/menu-list";
 import { categories } from "@/lib/data";
-import { subcategory } from "@/lib/data"
 import {useTranslations} from 'next-intl';
 
 export const metadata = {
@@ -11,7 +11,7 @@ export const metadata = {
   description: 'Explore our diverse menu featuring authentic cuisine prepared with the finest ingredients.',
 };
 
-export default function MenuPage() {
+export default function Menu() {
   const t =  useTranslations("Menu");
   
   return (
@@ -50,22 +50,22 @@ export default function MenuPage() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {subcategory.map((subcategory) => (
+            {categories.slice(0, 9).map((category) => (
               <Link 
-                href={`${subcategory.link}`} 
-                key={subcategory.id}
+                href={`${category.link}`} 
+                key={category.id}
                 className="group"
               >
                 <div className="relative h-64 rounded-lg overflow-hidden">
                   <Image
-                    src={subcategory.image}
-                    alt={subcategory.name}
+                    src={category.image}
+                    alt={category.name}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-white text-xl font-semibold mb-2">{subcategory.name}</h3>
+                    <h3 className="text-white text-xl font-semibold mb-2">{category.name}</h3>
                     
                   </div>
                 </div>

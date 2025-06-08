@@ -6,14 +6,14 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
-import { milkshakeandsmoothies } from "@/lib/data";
+import { cocktails } from "@/lib/data";
 import {useTranslations} from 'next-intl';
 
-export default function Breakfast() {
+export default function Cocktail() {
   const t =  useTranslations("Menu");
   ["margarita", "mojito", "espressoMartini", "bikiniMartini"]
   const [searchTerm, setSearchTerm] = useState("");
-  const categories = Array.from(new Set(milkshakeandsmoothies.map(item => item.category)));
+  const categories = Array.from(new Set(cocktails.map(item => item.category)));
   
 
     
@@ -41,7 +41,7 @@ export default function Breakfast() {
       <div className="container-custom">
 
         {!searchTerm && categories.map((category) => {
-          const categoryItems = milkshakeandsmoothies.filter(item => item.category === category);
+          const categoryItems = cocktails.filter(item => item.category === category);
           
           return (
             <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24">
