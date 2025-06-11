@@ -47,7 +47,7 @@ export default function Breakfast() {
     
           return (
             <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24">
-              <div className="flex gap-2  md:gap-8 justify-center md:justify-start md:ml-10 mt-10">
+              <div className="flex gap-2  md:gap-8 justify-center   mt-10">
               {subcategory.map((subcategory) => (
                 <Link 
                   href={`/${subcategory.link}`} 
@@ -61,9 +61,9 @@ export default function Breakfast() {
                   <FoodSlider 
                     autoPlay={false} 
                     autoPlayInterval={5000}
-                    className=""
+                    className="fixed z-10 bg-white md:ml-[9%]"
                   />
-              <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30">{category}</h2>
+              <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30 mt-[16vh] md:mt-[22vh]">{category}</h2>
               <motion.div 
                 className="grid grid-cols-1 md:grid-cols-2 gap-8"
                 variants={container}

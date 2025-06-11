@@ -6,8 +6,10 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
-import { alchoholbottles } from "@/lib/data";
+import { alchoholbottles,subcategory } from "@/lib/data";
 import {useTranslations} from 'next-intl';
+import { FoodSlider } from "@/components/menu/food-slider";
+import { Link } from "@/i18n/routing";
 
 export default function Alchoholbottles() {
   const t =  useTranslations("Menu");
@@ -39,13 +41,28 @@ export default function Alchoholbottles() {
     
     <section className="section bg-white">
       <div className="container-custom">
-
+      <div className="flex gap-2  md:gap-8 justify-center   mt-10">
+              {subcategory.map((subcategory) => (
+                <Link 
+                  href={`/${subcategory.link}`} 
+                  key={subcategory.id}
+                  className="bg-transparent border-2 text-[10px] border-[#015440] text-[#015440] px-2  md:px-6 py-1 md:py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-white hover:text-restaurant-dark"
+                 >
+                  {subcategory.name}
+                </Link>
+                ))}
+          </div>
+                  <FoodSlider 
+                    autoPlay={false} 
+                    autoPlayInterval={5000}
+                    className="fixed z-10 bg-white md:ml-[9%]"
+                  />
         {!searchTerm && categories.map((category) => {
           const categoryItems = alchoholbottles.filter(item => item.category === category);
           
           return (
             <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24">
-              <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30">{category}</h2>
+              <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30 mt-[16vh] md:mt-[22vh]">{category}</h2>
               
               <motion.div 
                 className="grid grid-cols-1 md:grid-cols-2 gap-8"
