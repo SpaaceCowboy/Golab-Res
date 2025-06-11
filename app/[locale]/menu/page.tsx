@@ -38,7 +38,7 @@ export default function MenuPage() {
           </p>
         </div>
       </section>
-      
+     
       {/* Categories */}
       <section className="section bg-restaurant-light">
         <div className="container-custom">
@@ -74,12 +74,6 @@ export default function MenuPage() {
           </div>
         </div>
       </section>
-      
-      {/* Menu List by Categories */}
-      
-      {/* Dietary Information */}
-
-      
       <Footer />
     </main>
   );
