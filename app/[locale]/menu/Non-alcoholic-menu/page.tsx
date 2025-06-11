@@ -41,7 +41,7 @@ export default function Nonalcoholicmenu() {
       
       {/* Categories */}
       <section className="section bg-restaurant-light">
-      <div className="flex gap-2  md:gap-8 justify-center md:justify-start md:ml-10">
+      <div className="flex gap-2  md:gap-8 justify-center ">
             {subcategory.map((subcategory) => (
           <Link 
                 href={`/${subcategory.link}`} 

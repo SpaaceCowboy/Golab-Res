@@ -55,14 +55,14 @@ export default function Pizza() {
                   <FoodSlider 
                     autoPlay={false} 
                     autoPlayInterval={5000}
-                    className="fixed z-10 bg-white md:ml-[9%]"
+                    className="fixed md:relative z-10 bg-white md:ml-[9%]"
                   />
         {!searchTerm && categories.map((category) => {
           const categoryItems = pizza.filter(item => item.category === category);
           
           return (
             <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24">
-              <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30 mt-[16vh] md:mt-[22vh]">{category}</h2>
+              <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30 mt-[16vh] md:mt-[22vh] lg:mt-0">{category}</h2>
               
               <motion.div 
                 className="grid grid-cols-1 md:grid-cols-2 gap-8"

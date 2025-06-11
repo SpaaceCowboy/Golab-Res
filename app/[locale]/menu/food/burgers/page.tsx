@@ -55,13 +55,13 @@ export default function Burgers() {
                   <FoodSlider 
                     autoPlay={false} 
                     autoPlayInterval={5000}
-                    className="fixed z-10 bg-white md:ml-[9%]"
+                    className="fixed z-10 bg-white md:ml-[9%] md:relative"
                   />
         {!searchTerm && categories.map((category) => {
           const categoryItems = burger.filter(item => item.category === category);
           
           return (
-            <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24">
+            <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24 lg:mt-0">
               <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30 mt-[16vh] md:mt-[22vh]">{category}</h2>
               
               <motion.div 
