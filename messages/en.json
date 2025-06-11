@@ -16,15 +16,7 @@
         "subtitle": "Our culinary experts craft every dish with passion"
       }
     },
-    "Navigation": {
-      "home": "Home",
-      "menu": "Menu",
-      "about": "About",
-      "gallery": "Gallery",
-      "contact": "Contact",
-      "orderOnline": "Order Online",
-      "reservation": "Reservation"
-    },
+
     "viewMenu": "View Our Menu",
     "bookTable": "Book a Table",
     "about": {

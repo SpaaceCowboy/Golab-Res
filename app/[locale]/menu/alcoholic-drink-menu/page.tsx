@@ -42,18 +42,18 @@ export default function Alcoholicdrinkmenu() {
       
       {/* Categories */}
       <section className="section bg-restaurant-light">
-      <div>
+      <div className="flex gap-2  md:gap-8 justify-center md:justify-start  md:ml-10">
             {subcategory.map((subcategory) => (
           <Link 
                 href={`${subcategory.link}`} 
                 key={subcategory.id}
-                className="bg-transparent border-2 border-[#015440] text-[#015440] px-6 py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-white hover:text-restaurant-dark"
+                className="bg-transparent border-2 text-sm border-[#015440] text-[#015440] px-2  md:px-6 py-1 md:py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-white hover:text-restaurant-dark"
               >
                 {subcategory.name}
               </Link>
               ))}
           </div>
-        <div className="container-custom">
+        <div className="container-custom mt-10">
           <div className="text-center mb-12">
             <span className="text-[#015440] font-medium mb-2 inline-block">
             {t("selection")}
@@ -61,14 +61,14 @@ export default function Alcoholicdrinkmenu() {
             <h2>{t("categories")}</h2>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {categories.slice(9, 14).map((category) => (
               <Link 
                 href={`${category.link}`} 
                 key={category.id}
                 className="group"
               >
-                <div className="relative h-64 rounded-lg overflow-hidden">
+                <div className="relative h-20 md:h-64 rounded-lg overflow-hidden">
                   <Image
                     src={category.image}
                     alt={category.name}
