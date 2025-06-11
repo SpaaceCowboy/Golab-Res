@@ -4,6 +4,7 @@ import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import MenuList from "@/components/menu/menu-list";
 import { categories, subcategory } from "@/lib/data";
+import { FoodSlider } from "@/components/menu/food-slider";
 import {useTranslations} from 'next-intl';
 
 export const metadata = {
@@ -44,7 +45,7 @@ export default function Menu() {
       <div className="flex gap-2  md:gap-8 justify-center md:justify-start md:ml-10">
             {subcategory.map((subcategory) => (
           <Link 
-                href={`${subcategory.link}`} 
+                href={`/${subcategory.link}`} 
                 key={subcategory.id}
                 className="bg-transparent border-2 text-sm border-[#015440] text-[#015440] px-2  md:px-6 py-1 md:py-3 rounded inline-block font-medium transition-all duration-300 hover:bg-white hover:text-restaurant-dark"
               >
