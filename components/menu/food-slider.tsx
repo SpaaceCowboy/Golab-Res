@@ -177,7 +177,7 @@ export function FoodSlider({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Main slider container */}
-      <div className="relative overflow-hidden px-12">
+      <div className="relative overflow-hidden mt-2 px-12">
         <div 
           className="flex transition-transform duration-500 ease-out"
           style={{
@@ -198,7 +198,7 @@ export function FoodSlider({
             >
               <div className="relative group cursor-pointer">
                 {/* Circular image container */}
-                <div className="relative h-[8vh] md:h-[13vh] w-full max-w-[140px] sm:max-w-[160px] mx-auto">
+                <div className="relative height  md:h-[13vh]  max-w-[140px] sm:max-w-[160px] mx-auto">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600 p-[3px] shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                     <div className="relative w-full h-full rounded-full overflow-hidden bg-white">
 

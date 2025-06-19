@@ -47,7 +47,12 @@ export default function Breakfast() {
     
           return (
             <div key={category} id={category.toLowerCase().replace(/\s+/g, '-')} className="mb-16 scroll-mt-24">
-              <div className="flex gap-2  md:gap-8 justify-center   mt-10">
+                <FoodSlider 
+                    autoPlay={false} 
+                    autoPlayInterval={5000}
+                    className="fixed  md:hidden md:relative z-10 bg-white md:ml-[9%] "
+                  />
+              <div className="flex gap-2  md:gap-8 justify-center mt-2">
               {subcategory.map((subcategory) => (
                 <Link 
                   href={`/${subcategory.link}`} 
@@ -57,12 +62,7 @@ export default function Breakfast() {
                   {subcategory.name}
                 </Link>
                 ))}
-          </div>
-                  <FoodSlider 
-                    autoPlay={false} 
-                    autoPlayInterval={5000}
-                    className="fixed md:relative z-10 bg-white md:ml-[9%]"
-                  />
+              </div>
               <h2 className="text-2xl font-medium mb-8 pb-2 border-b border-restaurant-primary/30 mt-[16vh] md:mt-[22vh] lg:mt-0">{category}</h2>
               <motion.div 
                 className="grid grid-cols-1 md:grid-cols-2 gap-8"
