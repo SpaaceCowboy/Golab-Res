@@ -52,7 +52,7 @@ export default function Breakfast() {
                     autoPlayInterval={5000}
                     className="fixed md:hidden md:relative z-10 bg-white md:ml-[9%] "
                   />
-            <div className="flex gap-2  md:gap-8 justify-center relative ">
+            <div className="flex gap-2  md:gap-8 justify-center ">
               {subcategory.map((subcategory) => (
                 <Link 
                   href={`/${subcategory.link}`} 

@@ -164,16 +164,17 @@
 
 @media (min-width: 310px) {
   .height {
-    height: 6vh;
+    height: 5vh;
   }
 }
+
 @media (min-width: 370px) {
   .height {
-    height: 11vh
+    height: 9vh
   }
 }
 @media (min-width: 420px) {
   .height {
-    height: 13vh
+    height: 11vh
   }
 }
