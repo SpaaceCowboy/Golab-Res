@@ -8,20 +8,20 @@ import { Pizza } from 'lucide-react';
 export const subcategory: Subcategory[] = [
   {
     id: 1,
-    name: 'Food',
-    image: '',
+    name: 'Plates',
+    image: 'https://vulpine-422382743.imgix.net/IMG_28792.JPG',
     link: 'menu/food'
   },
   {
     id: 2,
     name: 'Alchoholic Drinks',
-    image: '',
+    image: 'https://vulpine-422382743.imgix.net/photo_2025-03-09_13-48-53%20(2).jpg',
     link: 'menu/alcoholic-drink-menu'
   },
   {
     id: 3,
     name: 'Non Alchoholic Drinks',
-    image: '',
+    image: 'https://vulpine-422382743.imgix.net/IMG_2889.JPG',
     link: 'menu/Non-alcoholic-menu'
   }
 ]
@@ -158,7 +158,7 @@ export const breakfast: Breakfast[] = [
     
     id: 2,
     name: 'Turkish Breakfast For Two Person',
-    description: "ss",
+    description: "beyaz peynir, kaşar peyniri, çeçil peyniri, meyve, Çengelköy salatalık, domates, bal, kaymak, reçeller, nutella, zeytin çeşitleri, vişneli lor, hindi füme, sahanda yumurta, sucuk, domates soslu fırın sebzeler, pişi,patates kızartması, ekmek sepeti						",
     price: '₺1250',
     image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/IKI-KISILIK-SERPME-KAHVALTI-.webp',
     category: 'Breakfast',
@@ -1743,7 +1743,7 @@ export const menuItems: MenuItem[] = [
   {
     id: 2,
     name: 'Turkish Breakfast For Two Person',
-    description: "ss",
+    description: "beyaz peynir, kaşar peyniri, çeçil peyniri, meyve, Çengelköy salatalık, domates, bal, kaymak, reçeller, nutella, zeytin çeşitleri, vişneli lor, hindi füme, sahanda yumurta, sucuk, domates soslu fırın sebzeler, pişi,patates kızartması, ekmek sepeti						",
     price: '₺1250',
     image: 'https://golabrestaurant.com/wp-content/uploads/2024/09/IKI-KISILIK-SERPME-KAHVALTI-.webp',
     category: 'Breakfast',
@@ -1864,37 +1864,37 @@ export const gallery: Gallery[] = [
   {
     id: 1,
     title: 'Restaurant Interior',
-    image: 'https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/11/EZ_00498-2-1.jpg',
     category: 'Interior',
   },
   {
     id: 2,
     title: 'Chef Preparing Food',
-    image: 'https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://vulpine-422382743.imgix.net/IMG_2875.JPG',
     category: 'Kitchen',
   },
   {
     id: 3,
     title: 'Special Dinner Setting',
-    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://vulpine-422382743.imgix.net/IMG_2885.JPG',
     category: 'Events',
   },
   {
     id: 4,
     title: 'Signature Dish',
-    image: 'https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/11/DSC04998-1.jpg',
     category: 'Food',
   },
   {
     id: 5,
     title: 'Bar Area',
-    image: 'https://images.pexels.com/photos/274192/pexels-photo-274192.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://vulpine-422382743.imgix.net/photo_2025-03-09_13-48-53.jpg',
     category: 'Bar',
   },
   {
     id: 6,
     title: 'Private Dining Room',
-    image: 'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://golabrestaurant.com/wp-content/uploads/2023/11/DSC04603-1.jpg',
     category: 'Interior',
   },
 ];

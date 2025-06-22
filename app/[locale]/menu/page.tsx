@@ -18,7 +18,7 @@ export default function MenuPage() {
     <main>
       <Header />
       
-      {/* Hero Banner */}
+      {/* Hero Banner 
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
@@ -38,9 +38,10 @@ export default function MenuPage() {
           </p>
         </div>
       </section>
+      */}
      
       {/* Categories */}
-      <section className="section bg-restaurant-light">
+      <section className=" mt-10 section bg-restaurant-light">
         <div className="container-custom">
           <div className="text-center mb-12">
             <span className="text-[#015440] font-medium mb-2 inline-block">
@@ -56,7 +57,7 @@ export default function MenuPage() {
                 key={subcategory.id}
                 className="group"
               >
-                <div className="relative h-64 rounded-lg overflow-hidden">
+                <div className="relative h-40 md:h-64 rounded-lg overflow-hidden">
                   <Image
                     src={subcategory.image}
                     alt={subcategory.name}

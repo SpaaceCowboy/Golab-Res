@@ -19,7 +19,7 @@ export default function Alcoholicdrinkmenu() {
     <main>
       <Header />
       
-      {/* Hero Banner */}
+      {/* Hero Banner 
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
@@ -39,10 +39,11 @@ export default function Alcoholicdrinkmenu() {
           </p>
         </div>
       </section>
+      */}
       
       {/* Categories */}
       <section className="section bg-restaurant-light">
-      <div className="flex gap-2  md:gap-8 justify-center   ">
+      <div className="flex gap-2 mt-10  md:gap-8 justify-center   ">
             {subcategory.map((subcategory) => (
           <Link 
                 href={`/${subcategory.link}`} 
